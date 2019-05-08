@@ -54,19 +54,19 @@ To get your Nectar-generated key you follow these steps
 - Logon to the [Nectar Dashboard]([https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au/)) and navigate to Key Pairs page
 - Click the "**+** Create Key Pair" button
 
-![key-pairs-page](images\key-pairs-page.png)
+![key-pairs-page](images/key-pairs-page.png)
 
 - in the Create Key Pair dialog, insert a meaningful name for your key
 
 - Click the "**+** Create Key Pair" button
 
-![create-key-dialog](images\create-key-dialog.png)
+![create-key-dialog](images/create-key-dialog.png)
 
 - Your Public key is now registered in the list 
 
 - and your Private key is now downloaded by your browser.
 
-![1557213346498](images\registered-and-downloaded.png)
+![1557213346498](images/registered-and-downloaded.png)
 Your browser's default download folder is not an appropriate place to store your Private key. You should store your Private key in a suitably permanent place that is only accessible to you. 
 
 - Create a folder for your Keys  in a suitably permanent place that is only accessible to you
