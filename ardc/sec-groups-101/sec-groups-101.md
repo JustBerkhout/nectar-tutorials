@@ -16,14 +16,17 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 ## Overview
 Duration: 4:00
 
+### What are Security Groups and Rules
+
 Security Groups are Nectar's way of specifying what network traffic can reach into -and out of- your Virtual Machine (VM). By default a VM brought up in the Nectar Research Cloud can reach out to the world via the network, but the world can’t reach in.
 
 You need to specify any network traffic to be allowed to reach the VM via the Rules in a Security Group.
 
-Security groups can be applied to VMs at launch, and can be applied or removed at any other time in the VMs life. 
+Security groups can be applied to VMs at launch and can be applied or removed at any other time in the VMs life. 
 
 positive
-: This tutorials is part of the Nectar Cloud Starter curriculum. Only the bare essentials of security groups are discussed here. For more in depth review see the Nectar [Security Group documentation](https://support.ehelp.edu.au/support/solutions/articles/6000055387).
+: **Cloud Starter**
+This tutorials is part of the Nectar Cloud Starter curriculum. Only the bare essentials of security groups are discussed here. For more in depth review see the Nectar [Security Group documentation](https://support.ehelp.edu.au/support/solutions/articles/6000055387).
 
 
 ### What you'll learn
@@ -60,7 +63,8 @@ With the steps below you'll inspect your existing Security Groups and Rules.
 You will now see a list of the Security Groups that are available in your project. 
 
 positive
-: By the end of this tutorial you need to have a Security Group that will allow you to connect to an instance using `ssh`. 
+: **ssh group**
+By the end of this tutorial you need to have a Security Group that will allow you to connect to an instance using `ssh`. 
 
 If you see a group that is named `ssh` or similar, then 
 
@@ -89,7 +93,8 @@ You can create Security Groups on the Nectar Dashboard `Securty Groups` page, so
 - Give your Security Group a meaningful **Name** and optionally a **Description**. For the purpose of this tutorial we recommend the name `ssh`
 
 negative
-: Although you can use duplicate names for Security Groups, it will make your life harder if you do so. We recommend you don't.
+: **Unique Names**
+Although you can use duplicate names for Security Groups, it will make your life harder if you do so. We recommend you don't.
 
 - click Create Security Group to finalise this step. 
 
@@ -106,13 +111,14 @@ Two Egress rules should be visible. To add the `ssh` rule we need,
 In the Add Rule dialog, select the Rule SSH in the **Rule** selector.
 
 positive
-: Because the SSH rule is a very commonly used rule, it is preconfigured in Nectar. You'll see that the Add Rule dialog changes to show fewer fields upon selecting the SSH rule. 
+: **SSH is special**
+Because the SSH rule is a very commonly used rule, it is preconfigured in Nectar. You'll see that the Add Rule dialog changes to show fewer fields upon selecting the SSH rule. 
 
 - Click the Add button to complete this step.
 
 You have created a Security Group and configured it with the `ssh` rule. 
 
-## Next Steps and Support
+## Next Steps
 
 Duration: 1:00
 
@@ -121,4 +127,16 @@ Duration: 1:00
 Security Groups are applied to Virtual Machines to allow them to receive network traffic. Typically you apply Security Groups when you Launch your VM, but you can add and remove security groups to/from your VM later too. 
 
 negative
-: You can also add/remove Rules to/from existing Security Groups, but be mindful of the fact that this will affect all VMs that use the group. Whether future VM or existing
+: **Changing Rules on Existing Security Groups**
+You can also add/remove Rules to/from existing Security Groups, but be mindful of the fact that this will affect all VMs that use the group, including existing ones. 
+
+### Cloud Starter
+
+Well done. You've completed one of the three prerequisite steps launch and connect to a VM in the Nectar Cloud. 
+
+
+
+
+
+
+
