@@ -19,7 +19,8 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 Welcome to the Nectar Research Cloud **Cloud Starter** curriculum. In this Curriculum we've put together all the tutorials that you need to get started using the Cloud, no prior cloud knowledge required. 
 
-This curriculum is technical in nature. You will learn how to use the cloud, not why. It is also entry-level-easy: you'll learn one very basic way of doing things, not all. 
+positive
+: This curriculum is technical in nature. You will learn *how* to use the cloud, not *why*. It is also entry-level: you'll learn *one* (easy) way of doing some things, not *all*. 
 
 ### What you'll learn
 
@@ -32,9 +33,7 @@ This curriculum is technical in nature. You will learn how to use the cloud, not
 ### What you'll need
 
 - An account on the Nectar Research Cloud, or the AAF Access to get one. 
-
 - Basic computer skills
-
 - Terminal software. 
 
   
