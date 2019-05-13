@@ -18,6 +18,10 @@ Duration: 2:00
 
 In this tutorial you will learn how to create a Public-Private keypair for use with the Nectar Research Cloud. You will learn one or more methods of creating the keypairs and how to import your public key into your Nectar account.
 
+positive
+: **Cloud Starter**
+This tutorials is part of the Nectar Cloud Starter curriculum. Only the bare essentials of keys are discussed here for Launching a Nectar VM from the Nectar Dashboard.
+
 ### What you'll learn
 
 - How to create a Public-Private keypair for use with your Nectar Virtual Machine/s
@@ -102,3 +106,9 @@ Windows users that use PuTTY terminal software and have a Private key in `.pem`-
 ![puttygen](images/putty-file-save-private.png)
 
 You are now ready use your Private key in `ppk`-format to `ssh`-connect using the PuTTY terminal software.
+
+## Next Steps
+
+positive
+: **Cloud Starter**
+Congratulations. You've completed one of the prerequisite steps for Launching a Virtual Machine in the Nectar Research Cloud. 
