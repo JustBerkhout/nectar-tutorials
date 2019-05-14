@@ -1,7 +1,7 @@
 ---
 id: video-private-networking
 summary: Video demonstration of Private Networking and Floating IP-Addresses
-categories: Video
+categories: Video module
 tags: video, private network, router, floating ip-address
 difficulty: 5
 status: draft
