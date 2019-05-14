@@ -31,9 +31,6 @@ In this video demonstration we'll show you how to create a private network and h
 
 ### Demonstration
 
-<object style="width:100%;height:100%;width: 820px; height: 461.25px; float: none; clear: both; margin: 2px auto;" data="https://www.youtube.com/embed/mQP07VmKmwg">
-</object>
-
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=mQP07VmKmwg
 " target="_blank"><img src="http://img.youtube.com/vi/mQP07VmKmwg/0.jpg" 
 alt="Video Demonstration Private Networks and Floating IP Addresses" width="240" height="180" border="10" /></a>
