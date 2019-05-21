@@ -40,6 +40,8 @@ Instances belonging to a project with a private network can have a network inter
 
 ## Availability and quota
 
+Duration: 3:00
+
 Advanced Networking is available in a number of Nectar Availability Zones. Before you can use private networking you'll need to have quota in place for *Private Networks*, *Routers* and *floating IP Addresses*
 
 ### Availability
@@ -87,6 +89,10 @@ note: -1 denotes unlimited
 
 ## Networking Concepts
 
+Duration: 8:00
+
+
+
 To make use of Advanced Networking you should be at least familiar the Networking concepts listed below. 
 
 [IPv4 Address](https://en.wikipedia.org/wiki/IP_address) - A 32 bit number that represents a computer connected to a network, such as the public internet or a private local network. IPv4 addresses usually displayed in human readable format as 4 numbers between 0-255 separated by a dot.
@@ -127,6 +133,8 @@ Route - a rule which contains the next routing device to send a packet to so tha
 
 ## Classic vs. Advanced Networking
 
+Duration: 3:00
+
 ### Classic Networking:
 
 Compute instances are assigned a fixed IP address and are connected directly to the internet via a public network located at the instance’s availability zone.
@@ -141,12 +149,18 @@ Compute instances are attached to a private network that is attached to a virtua
 
 ![img](images/simple-private-network.png)
 
-## Getting Started
+## Demonstration
+
+Duration: 8:00
 
 A video demonstration of the steps to create a *private network*, a *router* and attach a *floating ip address* is here
 [![Video Demonstration Private Networks and Floating IP Addresses](images/youtube-0-private-networking.jpg)](https://youtu.be/mQP07VmKmwg)
 
 
+
+## Create network
+
+Duration: 6:00
 
 
 Below is a practical example of creating a private network, a private subnet within the private network, a virtual router, attaching the virtual router to the private network and the external network, then launching an instance with private network configuration, attaching a floating IP to the instance and configuring the network within the instance.
@@ -191,6 +205,12 @@ You can refer to the **Network -> Network Topology** tab for a visual representa
 
 ![img](images/JlT4sE4UuqEHqqzEvGy1WzvhKwujjMR1bw.png)
 
+
+
+## Create a router
+
+Duration: 6:00
+
 Step 3. Create a Router:
 
 Advanced Networking supports the creation of virtual routers that enable network traffic to be directed outside of the private network. Routers can be attached to an external network. When attached to an external network, the router can provide attached private networks with public internet access via [SNAT](https://en.wikipedia.org/wiki/Network_address_translation). In this way, multiple VMs can use the same IP address to communicate with the outside world, saving precious public IP resources.
@@ -234,6 +254,12 @@ You can refer to the **Network -> Network Topology** tab for a visual representa
 ![img](images/d1cwwadKTfoyLLvquQ_UaMpyzGnCz5_Snw.png)
 
 Once the interface has been successfully created you can begin to attach a compute instance to the network.
+
+
+
+## Launch instance in your new network
+
+Duration: 6:00
 
 Step 5. Attach a private network to a new instance:
 
@@ -296,6 +322,10 @@ You can refer to the **Network -> Network Topology** tab for a visual representa
 
 ![img](images/kfxghe6tFQg2OxjPDwH6Zl-SxOfx0HClRA.png)
 
+## Attach floating IP
+
+Duration: 4:00
+
 Step 6. Attaching a floating IP to an instance:
 
 In order for a floating IP to be attached to your instance properly, your instance needs to be part of a private network, which contains a private gateway-enabled subnet. You also need to have a router connected to an external network and your private network.
@@ -338,6 +368,8 @@ Step 6c. Verify the floating IP is now present in the Dashboard (you may need to
 
 
 ## Making changes
+
+Duration: 5:00
 
 ### Attaching network interface/s to existing compute instance:
 
@@ -455,6 +487,10 @@ Disassociated floating IP 796ae38f-d292-4c5a-93b1-24bb4bbf2955
 
 ## FAQ
 
+Duration: 5:00
+
+
+
 **Q: I want a private network for my instances to communicate with each other but I want to use classic networking for outside communication. How do I do that?**
 
 A: When creating the subnet, ensure you disable the gateway otherwise you will have two default routes in your instance and you may not be able to communicate with it. When launching an instance, add both Classic Provider and your private network to the list.
@@ -510,5 +546,7 @@ A: Yes! As long as the external network of your router belongs to the same Avail
 
 
 ## Next steps
+
+Duration: 1:00
 
 Some Nectar Openstack technologies rely on private networking. Learn about Load Balancing as a Service (LBAAS) [here](https://support.ehelp.edu.au/support/solutions/articles/6000192785)
