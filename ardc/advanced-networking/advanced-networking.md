@@ -542,23 +542,26 @@ A: There are two ways to approach this: a) one network, multiple subnets within 
 
 - create a port on the desired subnet
 
-```
-neutron port-create --fixed-ip subnet_id=<subnet_id> <network_id>
+```bash
+$ neutron port-create --fixed-ip subnet_id=<subnet_id> <network_id>
 ```
 - attach the port to instance
+
+```bash
+$ nova interface-attach --port-id <port_id> <instance_id>
 ```
-nova interface-attach --port-id <port_id> <instance_id>
-```
+
 - or create a new instance with it
-```
-openstack server create \
---flavor <flavor> \
---image <image> \
---key-name <key> \
---security-group ssh_icmp_http_https \
---availability-zone QRIScloud \
---nic port-id=<port_id>
-<instance_name>
+
+```bash
+$ openstack server create \
+   --flavor <flavor> \
+   --image <image> \
+   --key-name <key> \
+   --security-group ssh_icmp_http_https \
+   --availability-zone QRIScloud \
+   --nic port-id=<port_id>
+   <instance_name>
 ```
 
 
