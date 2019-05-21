@@ -1,7 +1,7 @@
 ---
 id: nectar-keypairs
 summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
-categories: security
+categories: nectar computing
 tags: security authentication
 difficulty: 1
 status: draft
