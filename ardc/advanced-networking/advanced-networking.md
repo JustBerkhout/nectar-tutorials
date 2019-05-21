@@ -40,8 +40,9 @@ Instances belonging to a project with a private network can have a network inter
 
 ## Availability and quota
 
-Advanced Networking is available in a number of Nectar Availability Zones. 
+Duration: 3:00
 
+Advanced Networking is available in a number of Nectar Availability Zones. Before you can use private networking you'll need to have quota in place for *Private Networks*, *Routers* and *floating IP Addresses*
 ### Availability
 
 Advanced networking is available at the following sites:
@@ -64,9 +65,13 @@ You can confirm your floating IP quota in the Project -> Overview section of the
 
 ![img](images/floating-ips-quota-dashboard.png) 
 
-You can confirm your current network quotas by running the following command using the Python Neutron CLI (please note: -1 denotes unlimited):
+You can confirm your current network quotas by running the following command using the Python Neutron CLI:
 
 ```bash
+=======
+You can confirm your current network quotas by running the following command using the Python Neutron CLI:
+
+```
 neutron quota-show
 +---------------------+-------+
 | Field               | Value |
@@ -82,10 +87,12 @@ neutron quota-show
 | subnetpool          | 0     |
 +---------------------+-------+
 ```
-
-
+=======
+note: -1 denotes unlimited
 
 ## Networking Concepts
+
+Duration: 8:00
 
 To make use of Advanced Networking you should be at least familiar the Networking concepts listed below. 
 
@@ -96,6 +103,17 @@ To make use of Advanced Networking you should be at least familiar the Networkin
 [Subnet](https://en.wikipedia.org/wiki/Subnetwork) - A logical subdivision of a network. A subnet contains a certain amount of IP addresses depending on its size (IP addresses ending in 0 and 255 are reserved). Computers in the same subnet do not need to use a router to communicate. Think of subnets as streets - each street has a set of houses (IPv4 addresses) belonging to it. On the public internet, street names are unique however in private networks they are not. In fact, there are 3 subnets that are reserved specifically for use in private networks, and NeCTAR strongly encourages using those subnets when creating Private Networks. Subnets can be expressed using a network address and a subnet mask or using CIDR notation.
 
 *Example 2: 192.168.100.0,255.255.255.0 is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: 192.168.100.1 -> 192.168.100.254Example 3: 192.168.100.0/24 is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. 255.255.255.0 converted to binary is 11111111.11111111.11111111.00000000 and 24 simply dictates the numbers of 1's on the left.Example 4: 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16 are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.*
+=======
+*Example 1: `192.168.0.1`*
+
+[Subnet](https://en.wikipedia.org/wiki/Subnetwork) - A logical subdivision of a network. A subnet contains a certain amount of IP addresses depending on its size (IP addresses ending in 0 and 255 are reserved). Computers in the same subnet do not need to use a router to communicate. Think of subnets as streets - each street has a set of houses (IPv4 addresses) belonging to it. On the public internet, street names are unique however in private networks they are not. In fact, there are 3 subnets that are reserved specifically for use in private networks, and NeCTAR strongly encourages using those subnets when creating Private Networks. Subnets can be expressed using a network address and a subnet mask or using CIDR notation.
+
+*Example 2: `192.168.100.0,255.255.255.0` is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: `192.168.100.1` -> `192.168.100.254`*
+
+*Example 3: `192.168.100.0/24` is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. `255.255.255.0` converted to binary is `11111111.11111111.11111111.00000000` and 24 simply dictates the numbers of 1's on the left.*
+
+*Example 4: `10.0.0.0/8`, `172.16.0.0/12` and `192.168.0.0/16` are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.*
+>>>>>>> priv-netw
 
 [Router](https://en.wikipedia.org/wiki/Router_(computing)) - A device that routes network traffic between subnets so that machines on different subnets are able to communicate. Routers generally do this by doing lookups in the router's routing table.
 
@@ -112,6 +130,10 @@ Route - a rule which contains the next routing device to send a packet to so tha
 [DNS (Domain Name System)](https://en.wikipedia.org/wiki/Domain_Name_System) - A protocol for translating domains into IP addresses. For example, [www.nectar.org.au](http://www.nectar.org.au/) is translated to 180.235.129.121 by a DNS Server.
 
 [DNS Server (Name Server)](https://en.wikipedia.org/wiki/Name_server) - A service which utilises the DNS protocol to translate domains into IP addresses. There are many free public DNS servers, such as 8.8.8.8 and 8.8.4.4.
+=======
+[DNS (Domain Name System)](https://en.wikipedia.org/wiki/Domain_Name_System) - A protocol for translating domains into IP addresses. For example, [www.nectar.org.au](http://www.nectar.org.au/) is translated to `180.235.129.12`1 by a DNS Server.
+
+[DNS Server (Name Server)](https://en.wikipedia.org/wiki/Name_server) - A service which utilises the DNS protocol to translate domains into IP addresses. There are many free public DNS servers, such as `8.8.8.8` and `8.8.4.4`.
 
 [DHCP (Dynamic Host Configuration Protocol)](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) -  a protocol for dynamically assigning IP addresses and routing information on a subnet. If a DHCP service is not present on a subnet, then an IP address and a subnet has to be manually set on each computer (static IP). If a DHCP service is present on a subnet, then the DHCP server decides what IP address (dynamic IP) to distribute to computers as they join the network. A DHCP allocation pool is a range of IP addresses that can be distributed to computers on the network.
 
@@ -123,11 +145,12 @@ Route - a rule which contains the next routing device to send a packet to so tha
 
 ## Classic vs. Advanced Networking
 
+Duration: 3:00
+
 ### Classic Networking:
 
 Compute instances are assigned a fixed IP address and are connected directly to the internet via a public network located at the instance’s availability zone.
  ![img](images/classic-network.png)
-
 
 
 
@@ -137,12 +160,19 @@ Compute instances are attached to a private network that is attached to a virtua
 
 ![img](images/simple-private-network.png)
 
-## Getting Started
+## Demonstration
 
-A video demonstration of the steps to create a Private Network, a router and attach a floating ip address is here
+Duration: 8:00
+
+A video demonstration of the steps to create a *private network*, a *router* and attach a *floating ip address* is here
+
 [![Video Demonstration Private Networks and Floating IP Addresses](images/youtube-0-private-networking.jpg)](https://youtu.be/mQP07VmKmwg)
 
 
+
+## Create network
+
+Duration: 6:00
 
 
 Below is a practical example of creating a private network, a private subnet within the private network, a virtual router, attaching the virtual router to the private network and the external network, then launching an instance with private network configuration, attaching a floating IP to the instance and configuring the network within the instance.
@@ -186,6 +216,14 @@ Step 2b. From the Subnet Detail tab complete the following fields and click **Cr
 You can refer to the **Network -> Network Topology** tab for a visual representation:
 
 ![img](images/JlT4sE4UuqEHqqzEvGy1WzvhKwujjMR1bw.png)
+
+
+
+
+## Create a router
+
+Duration: 6:00
+
 
 Step 3. Create a Router:
 
@@ -231,6 +269,12 @@ You can refer to the **Network -> Network Topology** tab for a visual representa
 
 Once the interface has been successfully created you can begin to attach a compute instance to the network.
 
+
+
+## Launch instance in your new network
+
+Duration: 6:00
+
 Step 5. Attach a private network to a new instance:
 
 In order for a compute instance to communicate on a private network it must be attached to an interface on that network. This section describes attaching a private network to an instance at instance launch time. If you already have a running instance, please see Section: Making Changes, Heading: Attaching network interface to existing compute instance.
@@ -245,7 +289,7 @@ Step 5b. In the Availability Zone tab, ensure you select the Availability Zone t
 
 If you use the OpenStack CLI, you can use the `--nic net-id=<NETWORK_ID>` flag when launching. For example:
 
-```bash
+​```bash
 openstack network list #Find the network UUID which we want to use when launching new instance
 
 +--------------------------------------+-----------------------------------+----------------------------------------------------------------------------+
@@ -292,6 +336,11 @@ You can refer to the **Network -> Network Topology** tab for a visual representa
 
 ![img](images/kfxghe6tFQg2OxjPDwH6Zl-SxOfx0HClRA.png)
 
+
+## Attach floating IP
+
+Duration: 4:00
+
 Step 6. Attaching a floating IP to an instance:
 
 In order for a floating IP to be attached to your instance properly, your instance needs to be part of a private network, which contains a private gateway-enabled subnet. You also need to have a router connected to an external network and your private network.
@@ -334,6 +383,8 @@ Step 6c. Verify the floating IP is now present in the Dashboard (you may need to
 
 
 ## Making changes
+
+Duration: 5:00
 
 ### Attaching network interface/s to existing compute instance:
 
@@ -445,4 +496,78 @@ neutron floatingip-list #get the UUID of the floating IP
 
 neutron floatingip-disassociate 796ae38f-d292-4c5a-93b1-24bb4bbf2955 #remove floating IP from instance
 Disassociated floating IP 796ae38f-d292-4c5a-93b1-24bb4bbf2955
+
+```
+
+
+
+## FAQ
+
+Duration: 5:00
+
+
+
+**Q: I want a private network for my instances to communicate with each other but I want to use classic networking for outside communication. How do I do that?**
+
+A: When creating the subnet, ensure you disable the gateway otherwise you will have two default routes in your instance and you may not be able to communicate with it. When launching an instance, add both Classic Provider and your private network to the list.
+
+
+
+**Q: I have a private network with more than one subnet. How do I connect my instance to more than one subnet from the same network? Only the first subnet is connected.**
+
+A: When launching an instance, OpenStack will only connect your first subnet of your private network to your instance. To connect more subnets, please create a port for the additional subnets (Network -> Networks -> {Your Private Network} -> Ports -> Create Port) by selecting "Subnet" under "Specify IP address or subnet" and selecting your additional subnet under "Subnet". All other fields can be left blank. After this, you can attach this subnet to your instance (Compute -> Instances -> Attach Interface) by selecting "by Port" under" The way to specify an interface" and selecting your newly created port.
+
+
+
+**Q: I want a private network for my instances to communicate with each other but I also want to be able to communicate with RDS storage from my instance in Queensland. How do I do that?**
+
+A: You can launch an instance with the private network only, wait for instance to boot then from the Dashboard attach the Classic Provider interface (Instance Actions -> Attach Interface -> ...), then detach the public port from the instance (Instance Actions -> Detach Interface -> 203.101.xxx.xxx). Inside the instance, configure the second interface to use DHCP and reboot your instance. You should then have your private network alongside the qld-data network. You can also add the qld-data network by using the following command:
+
+```
+nova interface-attach --net-id=00691b0f-69c3-444b-85ea-262dd6909052 <instance_id>
+```
+
+
+
+**Q: How do I create multiple networks that communicate with each other?**
+
+A: There are two ways to approach this: a) one network, multiple subnets within one network or b) multiple networks, one subnet per each network. Option b) is recommended because option a) does not allow the user to use the Dashboard to attach a second subnet to an instance, only the first. Option b) involves creating multiple networks, one subnet for every network, a virtual router, then attaching every subnet to the router. The virtual router will automatically route between the subnets attached to it. When creating instances / attaching networks to existing instances, you can select the network which contains the desired subnet from the list (which is not an available function if using option a)). If you are using option b) and you need to attach a second subnet to an instance, you can do so using the following commands:
+
+- create a port on the desired subnet
+
+```
+neutron port-create --fixed-ip subnet_id=<subnet_id> <network_id>
+```
+- attach the port to instance
+```
+nova interface-attach --port-id <port_id> <instance_id>
+```
+- or create a new instance with it
+```
+openstack server create \
+--flavor <flavor> \
+--image <image> \
+--key-name <key> \
+--security-group ssh_icmp_http_https \
+--availability-zone QRIScloud \
+--nic port-id=<port_id>
+<instance_name>
+```
+
+
+**Q: Can I associate a floating IP from Availability Zone "A" to an instance in Availability Zone "B"?**
+
+A: Yes! As long as the external network of your router belongs to the same Availability Zone as the Floating IP, the instance that is connected to this router via a network can have the Floating IP associated with it. Otherwise, you will get an error.
+
+
+
+## Next steps
+
+Duration: 1:00
+
+Some Nectar Openstack technologies rely on private networking. Learn about Load Balancing as a Service (LBAAS) [here](https://support.ehelp.edu.au/support/solutions/articles/6000192785)
+>>>>>>> priv-netw
+
+```
+
 ```
