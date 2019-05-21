@@ -68,10 +68,6 @@ You can confirm your floating IP quota in the Project -> Overview section of the
 You can confirm your current network quotas by running the following command using the Python Neutron CLI:
 
 ```bash
-=======
-You can confirm your current network quotas by running the following command using the Python Neutron CLI:
-
-```
 neutron quota-show
 +---------------------+-------+
 | Field               | Value |
@@ -87,7 +83,7 @@ neutron quota-show
 | subnetpool          | 0     |
 +---------------------+-------+
 ```
-=======
+
 note: -1 denotes unlimited
 
 ## Networking Concepts
@@ -98,22 +94,15 @@ To make use of Advanced Networking you should be at least familiar the Networkin
 
 [IPv4 Address](https://en.wikipedia.org/wiki/IP_address) - A 32 bit number that represents a computer connected to a network, such as the public internet or a private local network. IPv4 addresses usually displayed in human readable format as 4 numbers between 0-255 separated by a dot.
 
-*Example 1: 192.168.0.1*
+*Example 1*: `192.168.0.1`
 
 [Subnet](https://en.wikipedia.org/wiki/Subnetwork) - A logical subdivision of a network. A subnet contains a certain amount of IP addresses depending on its size (IP addresses ending in 0 and 255 are reserved). Computers in the same subnet do not need to use a router to communicate. Think of subnets as streets - each street has a set of houses (IPv4 addresses) belonging to it. On the public internet, street names are unique however in private networks they are not. In fact, there are 3 subnets that are reserved specifically for use in private networks, and NeCTAR strongly encourages using those subnets when creating Private Networks. Subnets can be expressed using a network address and a subnet mask or using CIDR notation.
 
-*Example 2: 192.168.100.0,255.255.255.0 is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: 192.168.100.1 -> 192.168.100.254Example 3: 192.168.100.0/24 is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. 255.255.255.0 converted to binary is 11111111.11111111.11111111.00000000 and 24 simply dictates the numbers of 1's on the left.Example 4: 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16 are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.*
-=======
-*Example 1: `192.168.0.1`*
+*Example 2:* `192.168.100.0,255.255.255.0` is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: `192.168.100.1` -> `192.168.100.254`
 
-[Subnet](https://en.wikipedia.org/wiki/Subnetwork) - A logical subdivision of a network. A subnet contains a certain amount of IP addresses depending on its size (IP addresses ending in 0 and 255 are reserved). Computers in the same subnet do not need to use a router to communicate. Think of subnets as streets - each street has a set of houses (IPv4 addresses) belonging to it. On the public internet, street names are unique however in private networks they are not. In fact, there are 3 subnets that are reserved specifically for use in private networks, and NeCTAR strongly encourages using those subnets when creating Private Networks. Subnets can be expressed using a network address and a subnet mask or using CIDR notation.
+*Example 3:* `192.168.100.0/24` is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. `255.255.255.0` converted to binary is `11111111.11111111.11111111.00000000` and 24 simply dictates the numbers of 1's on the left.
 
-*Example 2: `192.168.100.0,255.255.255.0` is a subnet expressed using a network address and a subnet mask. This subnet contains the following usable IP addresses: `192.168.100.1` -> `192.168.100.254`*
-
-*Example 3: `192.168.100.0/24` is a subnet equivalent to Example 2, expressed using CIDR notation. CIDR notation uses a slightly different way to define the subnet mask. `255.255.255.0` converted to binary is `11111111.11111111.11111111.00000000` and 24 simply dictates the numbers of 1's on the left.*
-
-*Example 4: `10.0.0.0/8`, `172.16.0.0/12` and `192.168.0.0/16` are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.*
->>>>>>> priv-netw
+*Example 4:* `10.0.0.0/8`, `172.16.0.0/12` and `192.168.0.0/16` are subnets reserved for use in private networks containing 16777214, 1048574 and 65,534 usable IP addresses respectively.
 
 [Router](https://en.wikipedia.org/wiki/Router_(computing)) - A device that routes network traffic between subnets so that machines on different subnets are able to communicate. Routers generally do this by doing lookups in the router's routing table.
 
@@ -127,10 +116,6 @@ Route - a rule which contains the next routing device to send a packet to so tha
 
 [Network Interface (Port)](https://en.wikipedia.org/wiki/Port_(computer_networking)) - point of interconnection between a computer and a network. Interfaces can be physical: in the form of a computer network card; or virtual: in the form of a connection between an instance and a virtual OpenStack router.
 
-[DNS (Domain Name System)](https://en.wikipedia.org/wiki/Domain_Name_System) - A protocol for translating domains into IP addresses. For example, [www.nectar.org.au](http://www.nectar.org.au/) is translated to 180.235.129.121 by a DNS Server.
-
-[DNS Server (Name Server)](https://en.wikipedia.org/wiki/Name_server) - A service which utilises the DNS protocol to translate domains into IP addresses. There are many free public DNS servers, such as 8.8.8.8 and 8.8.4.4.
-=======
 [DNS (Domain Name System)](https://en.wikipedia.org/wiki/Domain_Name_System) - A protocol for translating domains into IP addresses. For example, [www.nectar.org.au](http://www.nectar.org.au/) is translated to `180.235.129.12`1 by a DNS Server.
 
 [DNS Server (Name Server)](https://en.wikipedia.org/wiki/Name_server) - A service which utilises the DNS protocol to translate domains into IP addresses. There are many free public DNS servers, such as `8.8.8.8` and `8.8.4.4`.
@@ -289,7 +274,7 @@ Step 5b. In the Availability Zone tab, ensure you select the Availability Zone t
 
 If you use the OpenStack CLI, you can use the `--nic net-id=<NETWORK_ID>` flag when launching. For example:
 
-​```bash
+```bash
 openstack network list #Find the network UUID which we want to use when launching new instance
 
 +--------------------------------------+-----------------------------------+----------------------------------------------------------------------------+
@@ -485,7 +470,7 @@ Step 2. Click **Disassociate Floating IP** to confirm
 
 If you are using the OpenStack CLI, you can use the following commands to achieve identical results:
 
-```bash
+​```bash
 neutron floatingip-list #get the UUID of the floating IP
 
 +--------------------------------------+------------------+---------------------+--------------------------------------+
@@ -566,8 +551,4 @@ A: Yes! As long as the external network of your router belongs to the same Avail
 Duration: 1:00
 
 Some Nectar Openstack technologies rely on private networking. Learn about Load Balancing as a Service (LBAAS) [here](https://support.ehelp.edu.au/support/solutions/articles/6000192785)
->>>>>>> priv-netw
 
-```
-
-```
