@@ -160,7 +160,7 @@ Compute instances are attached to a private network that is attached to a virtua
 
 Duration: 8:00
 
-A video demonstration of the steps to create a *private network*, a *router* and attach a *floating ip address* is [here](https://youtu.be/mQP07VmKmwg)
+A video demonstration of the steps to create a *private network*, a *router* and attach a *floating ip address* is here
 
 [![Video Demonstration Private Networks and Floating IP Addresses](images/youtube-0-private-networking.jpg)](https://youtu.be/mQP07VmKmwg)
 
@@ -455,8 +455,10 @@ Please note that when you attach interfaces using the Dashboard, you are really 
 
 If you use the OpenStack CLI, you can achieve identical results by using the following commands:
 
+**find UUID of the port (interface) "My First Network"**
+
 ```bash
-nova interface-list cd576d51-8a13-49b9-9c13-88a0d57270f3 #find UUID of the port (interface) "My First Network"
+$ nova interface-list cd576d51-8a13-49b9-9c13-88a0d57270f3
 
 +------------+--------------------------------------+--------------------------------------+-----------------+-------------------+
 | Port State | Port ID                              | Net ID                               | IP addresses    | MAC Addr          |
@@ -465,8 +467,10 @@ nova interface-list cd576d51-8a13-49b9-9c13-88a0d57270f3 #find UUID of the port 
 | DOWN       | cfcc9430-1652-4c97-bf92-2e312138d646 | 00691b0f-69c3-444b-85ea-262dd6909052 | 10.255.131.192  | fa:16:3e:6b:af:55 |
 | DOWN       | d8c0c3df-259c-480d-a995-8d27dbff9a42 | 09ff5a87-2d4a-4e57-a474-f2d2d688bb48 | 192.168.1.7     | fa:16:3e:21:5c:d2 |
 +------------+--------------------------------------+--------------------------------------+-----------------+-------------------+
-
-nova interface-detach cd576d51-8a13-49b9-9c13-88a0d57270f3 d8c0c3df-259c-480d-a995-8d27dbff9a42 #detach "My First Network" port (interface) from instance "My First Instance"
+```
+**detach "My First Network" port (interface) from instance "My First Instance"**
+```bash
+nova interface-detach cd576d51-8a13-49b9-9c13-88a0d57270f3 d8c0c3df-259c-480d-a995-8d27dbff9a42
 ```
 
 ### Disassociating a Floating IP from instance:
@@ -481,8 +485,10 @@ Step 2. Click **Disassociate Floating IP** to confirm
 
 If you are using the OpenStack CLI, you can use the following commands to achieve identical results:
 
+**get the UUID of the floating IP**
+
 ```bash
-neutron floatingip-list #get the UUID of the floating IP
+$ neutron floatingip-list
 
 +--------------------------------------+------------------+---------------------+--------------------------------------+
 | id                                   | fixed_ip_address | floating_ip_address | port_id                              |
@@ -490,7 +496,12 @@ neutron floatingip-list #get the UUID of the floating IP
 | 796ae38f-d292-4c5a-93b1-24bb4bbf2955 | 192.168.1.7      | 203.100.30.43       | b9b2ab60-d7b0-4dc2-a5fe-fb41e29f2545 |
 +--------------------------------------+------------------+---------------------+--------------------------------------+
 
-neutron floatingip-disassociate 796ae38f-d292-4c5a-93b1-24bb4bbf2955 #remove floating IP from instance
+
+```
+**remove floating IP from instance**
+
+```bash
+$ neutron floatingip-disassociate 796ae38f-d292-4c5a-93b1-24bb4bbf2955
 Disassociated floating IP 796ae38f-d292-4c5a-93b1-24bb4bbf2955
 
 ```
@@ -563,5 +574,3 @@ Duration: 1:00
 
 Some Nectar Openstack technologies rely on private networking. Learn about Load Balancing as a Service (LBAAS) [here](https://support.ehelp.edu.au/support/solutions/articles/6000192785)
 
-
-```
