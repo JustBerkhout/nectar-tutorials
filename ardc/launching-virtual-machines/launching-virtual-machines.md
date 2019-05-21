@@ -56,6 +56,10 @@ In this tutorial we will use the Launch Dialog and configure the most basic Virt
 
 
 
+
+
+### From the Images page
+
 - Alternatively you can navigate to the `Project | Compute | Images` page, find an Image, and Click *Launch* on the Image’s Action Menu Button
 
 ![Launch dialog from the Images page](images/launch-from-images-page.png)
@@ -68,9 +72,11 @@ The `Launch Dialog` will guide you through the steps to launch an instance.
 
 ## Details, Source and Flavor
 
+Duration: 5:00
+
 ### Details
 
-Our instance must have a **name**; a **description** is optional. In certain circumstances you deliberately choose the **Availability Zone**, but you can also let Nectar decide by choosing *Any Availability Zone*. You can launch multiple instances at a time by setting the **Count**
+Your instance must have a **name**; a **description** is optional. In certain circumstances you deliberately choose the **Availability Zone**, but you can also let Nectar decide by choosing *Any Availability Zone*. You can launch multiple instances at a time by setting the **Count**
 
 ![Launch details](images/launch-details.png)
 
@@ -80,13 +86,13 @@ Our instance must have a **name**; a **description** is optional. In certain cir
 
 Choose a **Boot Source** (most common is *Image*)
 
-Use the Filter widget to help you find the image you need
+Use the Filter widget to help you find the image you need; Use the up-arrow beside the image you need to select it for launch
 
-Use the up-arrow beside the image you need to select it for launch
+If you started the Launch dialog from the *Images* page, instead of the *Instances* page, the Source tab is already configured right. If you need to, you can make changes though.
 
 ![Launch Source](images/launch-source.png)
 
-### 
+ 
 
 ### Filters
 
@@ -106,6 +112,8 @@ Use the up-arrow beside the flavor you need to select it for launch
 
 ## Networks, Security Groups and Key Pair
 
+Duration: 4:00
+
 ### Networks
 
 Basic usage: choose *Classic Provider*
@@ -121,7 +129,7 @@ You can learn more about making your own private networks and other networking t
 Use the up-arrow to select the `ssh` security group.
 
 positive
-: If you're following the Cloud Starter Curriculum, you created this in the tutorial [Security groups, the absolute basics](../sec-groups-101/sec-groups-101.md) 
+: If you're following the Cloud Starter Curriculum, you created this in the tutorial *Security groups, the absolute basics* 
 
 ![Launch Security groups](images/launch-secgroups.png)
 
@@ -134,7 +142,7 @@ positive
 Use the up-arrow to select your public key. 
 
 positive
-: If you're following the Cloud Starter Curriculum, you created this in the tutorial [Creating a keypair for use in Nectar](../keypairs/keypairs.md) 
+: If you're following the Cloud Starter Curriculum, you created this in the tutorial *Creating a keypair for use in Nectar*
 
 negative
 : For connecting to your instance using SSH you will need to have selected a key pair.
@@ -147,6 +155,8 @@ the tabs **Configuration**, **Server Groups** and **Metadata** are optional and 
 
 
 
+### Launch
+
 Your are now ready to Launch your instance. 
 
 - Click the Launch Instance button
@@ -155,7 +165,7 @@ Your are now ready to Launch your instance.
 
 Duration: 5:00
 
-Your instance will now be built according to the configuration options that we have specified in the configuration steps above. The **Instances** page will list your instance' details, along with some status information
+Your instance will now be built according to the configuration options that you have specified in the configuration steps above. The **Instances** page will list your instance' details, along with some status information
 
 ![Launch Building](images/launch-building.png)
 
