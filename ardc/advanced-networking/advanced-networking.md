@@ -160,7 +160,7 @@ Compute instances are attached to a private network that is attached to a virtua
 
 Duration: 8:00
 
-A video demonstration of the steps to create a *private network*, a *router* and attach a *floating ip address* is here
+A video demonstration of the steps to create a *private network*, a *router* and attach a *floating ip address* is [here](https://youtu.be/mQP07VmKmwg)
 
 [![Video Demonstration Private Networks and Floating IP Addresses](images/youtube-0-private-networking.jpg)](https://youtu.be/mQP07VmKmwg)
 
@@ -481,7 +481,7 @@ Step 2. Click **Disassociate Floating IP** to confirm
 
 If you are using the OpenStack CLI, you can use the following commands to achieve identical results:
 
-​```bash
+```bash
 neutron floatingip-list #get the UUID of the floating IP
 
 +--------------------------------------+------------------+---------------------+--------------------------------------+
@@ -563,3 +563,5 @@ Duration: 1:00
 
 Some Nectar Openstack technologies rely on private networking. Learn about Load Balancing as a Service (LBAAS) [here](https://support.ehelp.edu.au/support/solutions/articles/6000192785)
 
+
+```
