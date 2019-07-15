@@ -2,7 +2,7 @@
 
 id: launching-virtual-machines
 summary: Launching a virtual machine using the Nectar Dashboard and the launching dialog
-categories: Nectar Computing
+categories: Beginner
 tags: Cloud Starter, Launching, dashboard
 difficulty: 1
 status: draft

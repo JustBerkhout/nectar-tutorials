@@ -1,7 +1,7 @@
 ---
 id: example-tutorial
-summary: Learn how to create, write and publish tutorials on tutorials.ubuntu.com, reaching a wide audience of both beginner and advanced Linux users.
-categories: category
+summary: Learn how to create, write and publish tutorials for Nectar.
+categories: Non-Technical
 tags: tutorial, guidelines, guide, write, contribute
 difficulty: 2
 status: draft
@@ -425,7 +425,7 @@ With a list of bullet points, offer some guidance on the next steps a reader may
 
 * If you need support, the [snapcraft forum](https://forum.snapcraft.io) is the best place to get
   all your questions answered and get in touch with the community.
- ```
+```
 
 ### "Further reading"
 
@@ -439,7 +439,7 @@ With another list of bullet points, provide a list of external resources to get 
 * The snapcraft documention has everything you need if you want to look more
   into [hooks](https://docs.snapcraft.io/build-snaps/hooks)
   and [scriptlets](https://docs.snapcraft.io/build-snaps/scriptlers).
- ```
+```
 
  To use everything the tutorials engine has to offer, let's look at some syntax tips.
 

@@ -2,7 +2,7 @@
 
 id: advanced-networking
 summary: Advanced networking
-categories: Nectar Computing
+categories: Advanced
 tags: advanced networking private network router floating ip address
 difficulty: 5
 status: draft

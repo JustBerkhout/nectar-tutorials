@@ -1,7 +1,7 @@
 ---
 id: nectar-keypairs
 summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
-categories: nectar computing
+categories: Beginner
 tags: security authentication
 difficulty: 1
 status: draft
@@ -20,7 +20,7 @@ In this tutorial you will learn how to create a Public-Private keypair for use w
 
 positive
 : **Cloud Starter**
-This tutorials is part of the Nectar Cloud Starter curriculum. Only the bare essentials of keys are discussed here for Launching a Nectar VM from the Nectar Dashboard.
+This tutorial is part of the Nectar Cloud Starter curriculum. Only the bare essentials of keys are discussed here for Launching a Nectar VM from the Nectar Dashboard.
 
 ### What you'll learn
 
@@ -30,7 +30,7 @@ This tutorials is part of the Nectar Cloud Starter curriculum. Only the bare ess
 ### What you'll need
 
 - A terminal that has the `ssh-keygen` app installed, or
-- PuttyGen (if you're on Windows and intend to use Putty)
+- PuttyGen (if you intend to use Putty)
 - Access to the Nectar Research Cloud
 
 ## About keys and Nectar
@@ -40,11 +40,15 @@ A Public-Private keypair is used in the Nectar in stead of a password, to log on
 
 Before you get to that, you need to have a keypair and register your Public key in your Nectar account. 
 
-A Public-Private keypair is a pair of files, you r Private key and your Public key. They uniquely belong to each other. Your Private key file is yours, and yours alone. You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authenticate you in a remote computer account. 
+A Public-Private keypair is a pair of files, your Private key and your Public key. They uniquely belong to each other. Your Private key file is yours, and yours alone. You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise in a remote computer account. 
 
 When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account.  
 
 This way you can use `ssh` to connect to your VM using its IP address, the user account, and the private key that is securely stored on your computer.
+
+positive
+: **Theorising v. Hands dirty**
+We can theorise until the *bovi eunt domus* but for the purpose of this tutorial we should just get our hands dirty, so...
 
 Let's get a keypair and register it in Nectar. 
 
@@ -76,7 +80,7 @@ Your browser's default download folder is not an appropriate place to store your
 - Create a folder for your Keys  in a suitably permanent place that is only accessible to you
 - Move your downloaded Private key file into your new key folder.
 
-PuTTY on Windows uses a slightly different Private key file format. If you are a Windows user and you intend to use PuTTY to ssh-connect to your instances, you will need to do a key conversion using PuTTYgen.
+PuTTY on Windows uses a slightly different Private key file format. If you intend to use PuTTY to ssh-connect to your instances, you will need to do a key conversion using PuTTYgen.
 
 ## ssh-keygen method
 Duration: 4:00

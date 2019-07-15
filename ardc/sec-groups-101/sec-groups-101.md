@@ -1,7 +1,7 @@
 ---
 id: sec-groups-101
 summary: Get ready to launch with the bare minimum ssh Security Group for your Nectar instance.
-categories: Nectar computing
+categories: Beginner
 tags: Cloud Starter, Security Groups, ssh
 difficulty: 1
 status: draft
