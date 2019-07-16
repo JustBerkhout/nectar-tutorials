@@ -11,9 +11,9 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 ---
 
-# Cloud Starter
+# Cloud Starter Curriculum
 
-## Overview
+## Cloud Starter Curriculum
 
 ### Welcome
 
@@ -25,10 +25,12 @@ positive
 ### What you'll learn
 
 - Accessing and Navigating the Nectar Dashboard
-- Managing you Public-Private keypair
+- Managing your Public-Private keypair
 - Managing Security Groups
-- Launching Virtual Machines
-- Moving Data to and from your VM
+- Launching and connecting to your Virtual Machine (VM)
+- Using the command line and installing/updating software on your VM
+
+- Working with allocations
 
 ### What you'll need
 
