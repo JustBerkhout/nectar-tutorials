@@ -3,7 +3,7 @@ id: user-managment
 summary: Manage users in your Nectar projects.
 categories: non-technical
 tags:  beginner
-difficulty: 1
+difficulty: 3
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
 published: 2019-07-16
