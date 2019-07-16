@@ -38,6 +38,17 @@ Nectar provides OpenStack Swift for object storage. Hosting of Swift is geodistr
 - Understanding of -and access to- your OpenStack `.rc`-file
 - An allocation with an Object Storage quota
 
+## Survey
+
+Survey
+: How will you use this tutorial?
+ - Only read through it
+ - Read it and complete the exercises
+: What is your current level of experience?
+ - Novice
+ - Intermediate
+ - Proficient
+
 
 
 ## Nectar Dashboard
