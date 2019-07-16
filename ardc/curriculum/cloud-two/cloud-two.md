@@ -2,7 +2,7 @@
 id: cloud-two
 summary: Further deepen your Nectar Cloud skills, including git, CLI, DNS and more.
 categories: Curriculum
-tags: Cloud Two, beginner
+tags: Cloud Two, intermediate, series
 difficulty: 2
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
@@ -11,7 +11,7 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 ---
 
-# Working with the Cloud 2
+# Cloud 2 Curriculum
 
 ## Overview
 

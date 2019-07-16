@@ -2,7 +2,7 @@
 id: cloud-data
 summary: Learn about all things data in the Nectar Research Cloud
 categories: Curriculum
-tags: Cloud Data, beginner
+tags: Cloud Data, beginner, series
 difficulty: 2
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
@@ -11,7 +11,7 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 ---
 
-# Data and the Cloud
+# Data and the Cloud Curriculum
 
 ## Overview
 

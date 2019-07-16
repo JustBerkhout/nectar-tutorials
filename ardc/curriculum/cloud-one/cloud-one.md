@@ -2,7 +2,7 @@
 id: cloud-one
 summary: Build your Nectar Cloud skills, including graphical applications, volume storage , snapshots and resizing.
 categories: Curriculum
-tags: Cloud One, beginner
+tags: Cloud One, beginner, series
 difficulty: 1
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
@@ -11,7 +11,7 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 ---
 
-# Working with the Cloud 1
+# Cloud 1 Curriculum
 
 ## Overview
 

@@ -2,7 +2,7 @@
 id: cloud-starter
 summary: Get started launching and running your own virtual machines in the Nectar Research Cloud. Learn how easy it is to launch VMs, to connect, to move data and to try something new.
 categories: Curriculum
-tags: Cloud Starter, 101, entry level, beginner, Launch, 
+tags: Cloud Starter, 101, entry level, beginner, Launch, series
 difficulty: 1
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
