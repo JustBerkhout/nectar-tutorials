@@ -36,7 +36,7 @@ positive
 
 - An account on the Nectar Research Cloud, or the AAF Access to get one. 
 - Basic computer skills
-- Terminal software. 
+- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software). 
 
   
 

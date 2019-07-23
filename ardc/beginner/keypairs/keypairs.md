@@ -29,7 +29,7 @@ This tutorial is part of the Nectar Cloud Starter curriculum. Only the bare esse
 
 ### What you'll need
 
-- A terminal that has the `ssh-keygen` app installed, or
+- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software) that has the `ssh-keygen` app installed, or
 - PuttyGen (if you intend to use Putty)
 - Access to the Nectar Research Cloud
 
