@@ -39,13 +39,13 @@ A Public-Private keypair is used in the Nectar in stead of a password, to log on
 
 Before you get to that, you need to have a keypair and register your Public key in your Nectar account. 
 
-A Public-Private keypair is a pair of files, your Private key and your Public key. They uniquely belong to each other. Your Private key file is yours, and yours alone. You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise in a remote computer account. 
+A Public-Private keypair is a pair of files, your Private key and your Public key. They uniquely belong to each other. Your Private key file is yours, and yours alone. You should securely store it on a location on your computer that is only accessible to you.  Your Public key can be used to authorise and authenticate you in a remote computer account. 
 
 negative
 : **Important**
 Keep your Private key private and secure
 
-When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account. This way you can use `ssh` to connect to your VM using its IP address, the user account, and the private key that is securely stored on your computer.
+When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account. This way you can use `ssh` to connect to your VM using the three essential connection elements: the computer's IP address, the user account, and the private key that is securely stored on your computer.
 
 positive
 : **Theorising v. Hands dirty**
@@ -56,31 +56,31 @@ Let's get a keypair and register it in Nectar. On the next pages you will learn 
 ## Nectar convenience method
 Duration: 2:00
 
-Nectar can generate a keypair for you. It's easy and it means that your Public key is automatically registered in your Nectar account. You will have to ensure that your downloaded Private key file is in an appropriate and secure location on your computer.
+Nectar can generate a keypair for you. It's easy and your Public key is automatically registered in your Nectar account. You will have to ensure that your downloaded Private key file is in an appropriate and secure location on your computer.
 
 To get your Nectar-generated key you follow these steps
 
-- Logon to the [Nectar Dashboard]([https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au/)) and navigate to Key Pairs page
-- Click the "**+** Create Key Pair" button
+1. Logon to the [Nectar Dashboard]([https://dashboard.rc.nectar.org.au](https://dashboard.rc.nectar.org.au/)) and navigate to Key Pairs page
+2. Click the "**+** Create Key Pair" button
+   ![key-pairs-page](images/key-pairs-page.png)
+3. in the Create Key Pair dialog, insert a meaningful name for your key
+2. Click the "**+** Create Key Pair" button
+   ![create-key-dialog](images/create-key-dialog.png)
+5. Your Public key is now registered in the list 
+2. and your Private key is now downloaded by your browser.
+   ![1557213346498](images/registered-and-downloaded.png)
 
-![key-pairs-page](images/key-pairs-page.png)
-
-- in the Create Key Pair dialog, insert a meaningful name for your key
-
-- Click the "**+** Create Key Pair" button
-
-![create-key-dialog](images/create-key-dialog.png)
-
-- Your Public key is now registered in the list 
-
-- and your Private key is now downloaded by your browser.
-
-![1557213346498](images/registered-and-downloaded.png)
 Your browser's default download folder is not an appropriate place to store your Private key. You should store your Private key in a suitably permanent place that is only accessible to you. 
 
-- Create a folder for your Keys  in a suitably permanent place that is only accessible to you
-- Move your downloaded Private key file into your new key folder.
+1. Create a folder for your Keys  in a suitably permanent place that is only accessible to you. In the remainder of this tutorial we will assume you have created a `.ssh/` directory in your home directory, e.g. (using your local terminal)
+   ```bash
+   $ cd ~
+   $ mkdir .ssh
+   ```
+   
+2. Move your downloaded Private key file into your new key folder.
 
+That's all there's to *the Nectar convenience method*. 
 
 
 ## `ssh-keygen` method
