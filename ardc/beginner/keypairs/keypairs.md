@@ -29,8 +29,7 @@ This tutorial is part of the Nectar Cloud Starter curriculum. Only the bare esse
 
 ### What you'll need
 
-- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software) that has the `ssh-keygen` app installed, or
-- PuTTYGen (if you intend to use PuTTY)
+- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software) that has the `ssh-keygen` app installed
 - Access to the Nectar Research Cloud
 
 ## About keys and Nectar
@@ -46,15 +45,13 @@ negative
 : **Important**
 Keep your Private key private and secure
 
-When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account.  
-
-This way you can use `ssh` to connect to your VM using its IP address, the user account, and the private key that is securely stored on your computer.
+When you launch an instance, Nectar places the Public key from your Nectar account into your VM for you, attached to an admin user account. This way you can use `ssh` to connect to your VM using its IP address, the user account, and the private key that is securely stored on your computer.
 
 positive
 : **Theorising v. Hands dirty**
 We can theorise until the *bovi eunt domus* but for the purpose of this tutorial we should just get our hands dirty, so...
 
-Let's get a keypair and register it in Nectar. On the next pages you will learn 3 ways of getting a keypair for use with Nectar.
+Let's get a keypair and register it in Nectar. On the next pages you will learn two ways of obtaining a keypair for use with Nectar.
 
 ## Nectar convenience method
 Duration: 2:00
@@ -84,35 +81,15 @@ Your browser's default download folder is not an appropriate place to store your
 - Create a folder for your Keys  in a suitably permanent place that is only accessible to you
 - Move your downloaded Private key file into your new key folder.
 
-negative
-: PuTTY on Windows uses a slightly different Private key file format. If you intend to use PuTTY to `ssh` into your instances, you will need to do a key conversion using PuTTYgen.
 
-## PuTTYgen conversion
 
-Duration: 5:00
-
-Windows users that use PuTTY terminal software and have a Private key in `.pem`-format (e.g. from the Nectar Convenience method or `ssh-keygen`-method) will need to convert their Private key to `.ppk`-format. You can use PuTTYgen for the key conversion.
-
-- If you don't yet have a copy of PuTTYgen, download it from the [PuTTY website](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
-- Launch PuTTYgen you can double click the `puttygen.exe` file
-- Click 'Import key' item from the 'Conversions' menu:
-
-![puttygen2](images/puttygen-conversions-import.png)
-
-- Select the `.pem`private key you want to convert and click 'Ok'.
-- Select 'Save private key' from the 'File' menu. 
-- Click 'yes' to save your `.ppk`-key *without a passphrase*
-- Save the converted private key using the same name as the original key file, but with the `.ppk`-extension
-
-![puttygen](images/putty-file-save-private.png)
-
-You are now ready use your Private key in `ppk`-format to `ssh`-connect using the PuTTY terminal software.
-
-## ssh-keygen method
+## `ssh-keygen` method
 
 Duration: 4:00
 
-You can use the `ssh-keygen` command from the command line in your terminal to create a keypair for Nectar use. 
+A more generic way to generate a keypair is to use the `ssh-keygen` command from the command line in your terminal. You then need to import your Public Key into Nectar for Nectar use. 
+
+### Generating your keypair
 
 1. Open Terminal. You will start off in your *“home”* directory. If you already had the terminal open before, make sure you are in the home directory, by simply typing
    ```bash
@@ -152,40 +129,60 @@ You can use the `ssh-keygen` command from the command line in your terminal to c
 
 A key pair is just a pair of text files. You can view the contents of your key files with any text editor. 
 
-To use your key pair with Nectar you need to *Import* your public key (`foo-bar-blah-key.pub` in the example above) into Nectar. You will learn this in a next section
-
 positive
 : **Default key location**
 The `.ssh` directory that we created and used above, is a default location for private keys. Storing your private key in this location will save you typing the exact key file location every time you connect using `ssh`. More on that in our tutorial on Connecting
 
 
 
+### Importing your Public Key into Nectar
 
+To use your key pair with Nectar you need to *Import* your public key (`foo-bar-blah-key.pub` in the example above) into Nectar. 
 
-## PuTTYgen method
+positive
+: **Important**
+Make sure you import your **Public** key here, *not the private one*
 
-Duration: 4:00
+1. in your Nectar dashboard, navigate to `Compute | Keypairs`
+2. Click the `Import Public Key` button
+3. In the `Import Public Key` dialog, 
+   1. give your public key a **Key Pair Name** (this name doesn't need to match your key's filename or the label. You should choose a name that helps you stay meaningfully organised.)
+   2. Select *SSH Key* for **Key Type** 
+   3. Load your public key from your public key file (`foo-bar-blah-key.pub` in our example), using the Choose File button and dialog **or**
+   4. Paste the text of your public key in the **Public Key** field.
+      The completed Import Public Key Dialog should look something like this
+      ![import-key-completed-dialog](images/import-key-completed-dialog.png)
 
+5. Click the `Import Public Key` button
 
-
-## 
-
-## Import Public Key into Nectar
-
-
+The name of your key should now be listed in the Key Pairs page on your Nectar Dashboard. 
 
 ## A note on file permissions
 
-`.ssh/` needs to be 700, or drwx------
+Depending on your Operating System and your `ssh` software the file access permissions on the directory `~/.ssh` and your private key file  (e.g. `~/.ssh/foo-bar-blah-key`) matter. If this is the case for your situation, you may find that your attempts to establish an ssh-connection fail, with an error message similar to  
 
-`.ssh/private-key` needs to be 600 or -rw-------
+```bash
+Permissions 0666 for '.ssh/foo-bar-blah-key' are too open.
+It is required that your private key files are NOT accessible by others.
+This private key will be ignored.
+Load key ".ssh/foo-bar-blah-key": bad permissions
+```
+
+In this case you should change the *mode* of the `.ssh`-directory to 700 and the mode of the private key file to 600. You can use the `chmod` command to do this, as in the example below
+
+```bash
+$ cd ~
+$ chmod 700 .ssh/
+$ chmod 600 .ssh/foo-bar-blah-key
+```
 
 ## Next Steps
 
+A key pair is one of the bare necessities for adopting the Nectar research Cloud into your research. In this tutorial you've obtained a key pair and registered it in your Nectar account. You are well one step away from being able to launch your own virtual machines. 
+
+If you haven't already done so, you should learn **the basics of security groups** and then learn to **Launch Virtual Machines** from the Nectar Dashboard. 
+
 positive
 : **Cloud Starter**
-Congratulations. You've completed one of the prerequisite steps for Launching a Virtual Machine in the Nectar Research Cloud. 
+Congratulations. You've completed one of the prerequisite steps for Launching a Virtual Machine in the Nectar Research Cloud. Keep up the good work. 
 
-```
-
-```
