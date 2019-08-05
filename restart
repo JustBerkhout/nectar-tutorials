@@ -1,3 +1,5 @@
 ./runx stop
 ./runx serve -d ardc
+sleep 3
+docker ps
 
