@@ -1,5 +1,4 @@
 ---
-
 id: object-storage
 summary: Using Swift, OpenStack object storage
 categories: Intermediate
@@ -9,7 +8,6 @@ status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
 published: 2019-07-14
 author: Just Berkhout <just.berkhout@utas.edu.au>
-
 
 ---
 

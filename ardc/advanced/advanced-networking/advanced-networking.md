@@ -1,7 +1,7 @@
 ---
 
 id: advanced-networking
-summary: Advanced networking
+summary: Learn to implement some advanced networking concepts in your Nectar Research Cloud project
 categories: Advanced
 tags: advanced networking private network router floating ip address
 difficulty: 5

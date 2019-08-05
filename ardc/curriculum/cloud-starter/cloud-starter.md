@@ -13,11 +13,11 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 # Cloud Starter Curriculum
 
-## Cloud Starter Curriculum
+## Cloud Starter Series
 
 ### Welcome
 
-Welcome to the Nectar Research Cloud **Cloud Starter** curriculum. In this Curriculum we've put together all the tutorials that you need to get started using the Cloud, no prior cloud knowledge required. 
+Welcome to the Nectar Research Cloud **Cloud Starter** series. In this series we've put together all the tutorials that you need to get started using the Cloud, no prior cloud knowledge required. 
 
 positive
 : This curriculum is technical in nature. You will learn *how* to use the cloud, not *why*. It is also entry-level: you'll learn *one* (easy) way of doing some things, not *all*. 
