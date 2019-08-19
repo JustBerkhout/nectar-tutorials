@@ -33,3 +33,38 @@ get one.
 
   
 
+## Personal Trial (pt) projects
+
+
+
+* resources
+* limitations
+
+
+
+## Projects
+
+- requests
+- resources
+- allocation homes
+- national merit
+- request/approval process
+- project trial conversion
+
+## Allocation requester and project manager
+
+- emails sent in 
+- ability to request/amendments
+
+## Amending and Extending
+
+* additional resources
+* additional time
+
+
+
+## Project Expiry
+
+- rules for expiry
+- limited archiving
+
