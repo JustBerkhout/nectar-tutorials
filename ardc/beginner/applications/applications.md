@@ -63,10 +63,6 @@ Duration: 2:00
 
 Choose your desired **Instance Flavor**, **Key pair** and the **Availability Zone**. Click `Next` to continue.
 
-positive
-: **A word on Volumes**
-With R-Studio you can select an existing volume for application data storage. Using a Volume makes any data you generate on your instance persistent, i.e. you can terminate the instance, but your data will remain intact on the volume until you launch a new instance with that volume attached. If you plan to use a volume, you have to have a Volume storage allocation and you have to make sure your volume and application environment are in the same Availability Zone. Learn more about volumes in our Volume Storage tutorial.
-
 ![Launch details](images/rstudio-flavor.png)
 
 ### Host name and DNS Zone
@@ -83,7 +79,11 @@ Choosing an easy Host name and associating your project's DNS zone is highly rec
 
 ### Existing Volume
 
-Select your volume, if required. Click `Next` to continue.
+Optionally, select your existing volume. Click `Next` to continue. You can complete this tutorial without using an *existing volume*. 
+
+positive
+: **A word on Volumes**
+With R-Studio you can select an existing volume for application data storage. Using a Volume makes any data you generate on your instance persistent, i.e. you can terminate the instance, but your data will remain intact on the volume until you launch a new instance with that volume attached. If you plan to use a volume, you have to have a Volume storage allocation and you have to make sure your volume and application environment are in the same Availability Zone. Learn more about volumes in our Volume Storage tutorial.
 
 ![dashboard-filters](images/rstudio-volume.png)
 
