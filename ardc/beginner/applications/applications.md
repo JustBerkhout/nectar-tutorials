@@ -71,7 +71,7 @@ You can choose an optional **Host name** and **DNS zone** name for your instance
 
 positive
 : **Highly recommended**
-Choosing an easy Host name and associating your project's DNS zone is highly recommended. Not only will you be able to access your R-Studio on the slick URL of `https://[hostname].[project].cloud.edu.au`, your R-Studio instance will be setup with encrypted communications (i.e. `https`), significantly improving the security of you instance.
+Choosing an easy Host name and associating your project's DNS zone is highly recommended. Not only will you be able to access your R-Studio on the slick URL of `https://[hostname].[project].cloud.edu.au`, your R-Studio instance will be set up with encrypted communications (i.e. `https`), significantly improving the security of your instance.
 
 
 
