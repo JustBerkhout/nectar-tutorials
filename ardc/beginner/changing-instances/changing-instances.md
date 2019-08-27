@@ -16,6 +16,8 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 ## Overview
 
+Duration: 2:00
+
 Virtual Machines in the Nectar Research Cloud are very flexible. You have control over the size and number of instances you launch in your project. Occasionally you'll have reason to *reboot* your instance. If you didn't really get your instance quite right on your first try, you can *rebuild* it with a different image, or a *resize* it to a different flavour. When you're done with an instance you can just *delete* it: no need for recycling or eBay.  
 
 ### What you'll learn
@@ -32,6 +34,8 @@ positive
 As we'll be quite destructive in the sections *Rebuilding* and *Deleting* below, we strongly recommend you launch an instance specifically for the purpose of this tutorial.
 
 ## Rebooting
+
+Duration: 10:00
 
 From time to time you may find the need to reboot your instance. Whether a software install or upgrade as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
 
@@ -82,6 +86,8 @@ You can also restart the instance from the Console in the Console tab on the Ins
 
 ## Resizing
 
+Duration: 5:00
+
 One benefit of Virtual Machines over physical ones is that the virtual ones you can actually make bigger. Increasing the number of CPUs, the RAM and the hard drive in your computer was never this easy.
 
 Navigate to the Instances page on your Nectar Dashboard, and select *Resize instance* from the Action Menu of the instance you would like to resize. This will take you to the *Resize Instance dialog* where you can select a new flavour for your instance. 
@@ -106,6 +112,8 @@ You won't be able to resize your instances beyond your allocated resource quota.
 
 ## Rebuilding
 
+Duration: 8:00
+
 You can *Rebuild* an instance. This means that your instance will retain its flavour, volume attachments and IP-address, but it will have a new image applied to it. 
 
 negative
@@ -125,6 +133,8 @@ negative
 If you use *Rebuild* and then reconnect to your instance using `ssh` you will typically receive a `REMOTE HOST IDENTIFICATION HAS CHANGED!`-warning. This is expected behaviour after a *Rebuild* as `ssh` detects a materially different computer using an old IP-address. 
 
 ## Deleting
+
+Duration: 6:00
 
 By now you will have recognised a pattern in how to perform actions on your instances via the Nectar dashboard. We will perform one more: *Deleting*. When you're finished using your instance, or you are otherwise ready to throw it away, you can just Delete your instance using the Instance Action Menu. There's more info in the knowledge base about actions you can perform via the [Instance Action Menu Button](https://support.ehelp.edu.au/support/solutions/articles/6000184172-instance-action-menu-button).
 
@@ -147,6 +157,8 @@ Security Groups and Keypairs that were applied to your instance, are not deleted
 
 
 ## Next Steps
+
+Duration: 1:00
 
 In this tutorial you learnt how to resize, rebuild, reboot and delete your instances using the Instance Action Menu on the Nectar Dashboard. These are four life cycle events of virtual machines help make cloud computing very flexible. You can experiment with configuration of your instances and throw them away completely guilt-free. Not to mention *free*. Full Stop.
 
