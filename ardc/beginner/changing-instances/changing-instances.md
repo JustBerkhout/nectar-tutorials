@@ -1,6 +1,6 @@
 ---
 id: changing-instances
-summary: Learn to reboot, resize, rebuild and delete instances
+summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
 categories: Beginner
 tags: 
 difficulty: 1
@@ -25,7 +25,7 @@ Virtual Machines in the Nectar Research Cloud are very flexible. You have contro
 
 ### What you'll need
 
-- Some spare capacity in your Nectar Research Cloud account for launch of a trial instance and/or resizing an instance.
+- Some spare capacity in your Nectar Research Cloud account for launching a trial instance and/or resizing an instance.
 
 positive
 : **Setting up**
@@ -35,7 +35,7 @@ As we'll be quite destructive in the sections *Rebuilding* and *Deleting* below,
 
 From time to time you may find the need to reboot your instance. Whether a software install or upgrade as part of a troubleshooting task. Below are a number of ways you can reboot your instance. 
 
-### From `ssh` command line
+### From the `ssh` command line
 
 You can use the Linux command `shutdown` from your `ssh` command line. During shutdown and reboot your `ssh`-connection will be broken, but after successful rebooting you can reconnect to your instance. 
 
