@@ -21,14 +21,15 @@ Virtual Machines in the Nectar Research Cloud are very flexible. You have contro
 ### What you'll learn
 
 - Life-cycle events of your instance: *Rebooting*, *Resizing*, *Rebuilding*, *Deleting*.
+- Use the Instance Action Menu Button
 
 ### What you'll need
 
-- Some spare capacity in your Nectar Research Cloud account for launch of a trial instance and/or resizing and instance.
+- Some spare capacity in your Nectar Research Cloud account for launch of a trial instance and/or resizing an instance.
 
 positive
 : **Setting up**
-As we'll be quite destructive in the sections *Rebuilding* and *Deleting* below, we suggest you launch an instance specifically for the purpose of this tutorial.
+As we'll be quite destructive in the sections *Rebuilding* and *Deleting* below, we strongly recommend you launch an instance specifically for the purpose of this tutorial.
 
 ## Rebooting
 
@@ -36,7 +37,7 @@ From time to time you may find the need to reboot your instance. Whether a softw
 
 ### From `ssh` command line
 
-You can use the Linux command `shutdown` from your `ssh` commandline. During shutdown and reboot your `ssh`-connection will be broken, but after successful rebooting you can reconnect to your instance. 
+You can use the Linux command `shutdown` from your `ssh` command line. During shutdown and reboot your `ssh`-connection will be broken, but after successful rebooting you can reconnect to your instance. 
 
 The command for rebooting from the command line is given below:
 
