@@ -12,11 +12,11 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 ---
 
-# Rebooting, Deleting, Rebuilding, Resizing
+# Rebooting, Resizing, Rebuilding, Deleting
 
 ## Overview
 
-Virtual Machines in the Nectar Research Cloud are very flexible. You have control over the size and number of instances you launch in your project. Occasionally you'll have reason to *reboot* your instance. If you didn't really get you instance quite right on your first try, you can *rebuild* it with a different image, or a *resize* it to a different flavour. When you're done with an instance you can just *delete* it: no need for recycling or eBay.  
+Virtual Machines in the Nectar Research Cloud are very flexible. You have control over the size and number of instances you launch in your project. Occasionally you'll have reason to *reboot* your instance. If you didn't really get your instance quite right on your first try, you can *rebuild* it with a different image, or a *resize* it to a different flavour. When you're done with an instance you can just *delete* it: no need for recycling or eBay.  
 
 ### What you'll learn
 
@@ -88,11 +88,11 @@ Navigate to the Instances page on your Nectar Dashboard, and select *Resize inst
 
 ### 2-step process
 
-The resize action is a 2-step process. When you click the Resize button on the *Resize Instance Dialog* a request for *Migrate/Resize* will be submitted. Your instance page will appear, and will show relevant Status and an Action button asking you to `Confirm Resize/Migrate`. This process typically takes les than a minute. 
+The resize action is a 2-step process. When you click the Resize button on the *Resize Instance Dialog* a request for *Migrate/Resize* will be submitted. Your instance page will appear, and will show relevant Status and an Action button asking you to `Confirm Resize/Migrate`. This process typically takes less than a minute. 
 
 positive
 : **Flavour constraints**
-You won't be able to resize your instances beyond your allocated resource quota. There are also some constraints resizing from some instance sizes to other, mostly to do with a flavour's disk space. You can read more about it in the [Resizing documentation](https://support.ehelp.edu.au/support/solutions/articles/6000212271-resizing-nectar-instances) in the Nectar knowledge base.
+You won't be able to resize your instances beyond your allocated resource quota. There are also some constraints resizing from some instance sizes to others, mostly to do with a flavour's disk space. You can read more about it in the [Resizing documentation](https://support.ehelp.edu.au/support/solutions/articles/6000212271-resizing-nectar-instances) in the Nectar knowledge base.
 
 ![Action Menu Resize](images/action-menu-resize.png)
 
