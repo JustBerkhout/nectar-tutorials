@@ -19,19 +19,21 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 Making the most of your use of the Nectar Research Cloud requires that you familiarise yourself with this language and with the associated processes. 
 
-Nectar Cloud resources are granted to you in periods of up to a year. An automated expiry process will recover unused and unclaimed resources and recovered resources can then be granted out to researchers just like yourself. 
+Nectar Cloud resources are granted to you in periods of up to a year. An automated expiry process will recover unused and unclaimed resources and the recovered resources can then be granted out to researchers just like yourself. 
 
 negative
 : **Warning**
 Familiarise yourself with the expiry process, to prevent surprise deletions of your hard work and data. 
 
 negative
-: **Antarctica and Amazon** (te)
-The  Expiry Bot does not know of your field trips to Antarctica or the Amazon rainforest, or any other places where wifi-access or your attention to emails may be limited. Make sure you have arranged extensions for your projects if you happen to be away for extended periods (or delegate your project manager role to another user). 
+: **Antarctica and Amazon (the rainforest)**
+The  Expiry Bot diligently executes the expiry process. It does not know of your field trips to Antarctica or the Amazon rainforest, or any other places where wifi-access or your attention to emails may be limited. Make sure you have arranged extensions for your projects if you happen to be away for extended periods (or delegate your project manager role to another user). 
 
 
 
- 
+### A diagram
+
+![Overview diagram](images/requests-projects.svg)
 
 ### What you'll learn
 
@@ -76,7 +78,7 @@ The first time you log on to the dashboard, Nectar creates two things your *Acco
 
 
 
-## Projects
+## Allocation process and Projects
 
 - requests
 - resources
@@ -87,12 +89,12 @@ The first time you log on to the dashboard, Nectar creates two things your *Acco
 - User management
 - Project manager status
 
-## Allocation requester and project manager
+### Allocation requester and project manager
 
 - emails sent in 
 - ability to request/amendments
 
-## Amending and Extending
+### Amending and Extending
 
 * additional resources
 * additional time
@@ -102,3 +104,12 @@ The first time you log on to the dashboard, Nectar creates two things your *Acco
 - rules for expiry
 - limited archiving
 
+
+
+## Users in your projects
+
+user management (selve serve) user must have a Nectar account
+
+project manager role (ask dhd)
+
+Project managers are in on the Expiry process notifications and can request amendments/extensions. Good for delegation, 
