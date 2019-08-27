@@ -65,7 +65,7 @@ debian@acme-analysis:~$
 
 You can reboot your instances from the Nectar Dashboard Instances page. 
 
-![1566797824017](images/1566797824017.png)
+![Action Menu Reboot options](images/action-menu-reboot-options.png)
 
 Choose from *Soft Reboot Instance* and *Hard Reboot Instance*. 
 
@@ -75,7 +75,7 @@ Choose from *Soft Reboot Instance* and *Hard Reboot Instance*.
 
 You can also restart the instance from the Console in the Console tab on the Instance Detail page for your instance. Use the button `Send CtrlAltDel` send the reboot request. This option is useful in the unlikely event you need [recovery options](https://support.ehelp.edu.au/support/solutions/articles/6000194010-recovery-options-when-you-cannot-access-your-instance). 
 
-![1566798284369](images/1566798284369.png)
+![Console Send Ctrl-Alt-Del](images/console-send-ctrlaltdel.png)
 
 
 
@@ -93,15 +93,15 @@ positive
 : **Flavour constraints**
 You won't be able to resize your instances beyond your allocated resource quota. There are also some constraints resizing from some instance sizes to other, mostly to do with a flavour's disk space. You can read more about it in the [Resizing documentation](https://support.ehelp.edu.au/support/solutions/articles/6000212271-resizing-nectar-instances) in the Nectar knowledge base.
 
-![1566802222587](images/1566802222587.png)
+![Action Menu Resize](images/action-menu-resize.png)
 
 
 
-![Resize Instance Dialog](images/1566802460073.png)
+![Resize Instance Dialog](images/resize-instance-dialog.png)
 
 
 
-![1566800897816](images/1566800897816.png)
+![Confirm Resize](images/confirm-resize-status.png)
 
 ## Rebuilding
 
@@ -113,11 +113,11 @@ The *Rebuild* action erases all data on your instance primary and ephemeral driv
 
 
 
-![1566803389956](images/1566803389956.png)
+![Action Menu Rebuild](images/action-menu-rebuild.png)
 
-![1566803742091](images/1566803742091.png)
+![Rebuild Dialog](images/rebuild-dialog.png)
 
-![1566803836273](images/1566803836273.png)
+![Rebuild Status](images/rebuild-status.png)
 
 negative
 : **Warning: Remote Host Identification Changed**
@@ -135,7 +135,7 @@ positive
 : **Manage your data**
 Before deleting your instance, you should manage your data. You should store your valuable data on persistent storage, e.g. [Nectar Volume Storage](https://support.ehelp.edu.au/support/solutions/articles/6000216075-persistent-volume-storage) or [File Shares](https://support.ehelp.edu.au/support/solutions/articles/6000183607-nectar-shared-filesystem-service), or [your institution storage](https://support.ehelp.edu.au/support/solutions/articles/6000136764-introduction-to-rds-participating-nodes) options or your local machine.
 
-![1566861751474](images/1566861751474.png)
+![Action Menu Delete](images/action-menu-delete.png)
 
 
 
