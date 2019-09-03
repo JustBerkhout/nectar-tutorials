@@ -18,11 +18,11 @@ author: Just Berkhout <just.berkhout@utas.edu.au>
 
 Duration: 1:00
 
-While working with your instance you will almost certainly need to move data to or from it at some stage. There are many options to move data, too many for us to go into all of them. In this tutorial we will show you a few options, that work well. 
+While working with your instance you will almost certainly need to move data to or from it at some stage. There are many tools to move data. Too many for us to go into all of them. In this tutorial we will show you a few options, that work well. 
 
 ### What you'll learn
 
-- using some popular open source tools `scp`, Cyberduck and `rsync`
+- using some popular open source tools `scp` and  Cyberduck
 
 ### What you'll need
 
@@ -40,7 +40,8 @@ $ scp source-file destination-file
 
 positive
 : **Default or custom private key name/location**
-If you have your private key either in the default location of `~/.ssh/id_rsa` then you don't need to specify it to the `scp` command. If you have a custom name or location, then you need to specify it to `scp` using the `-i` argument, e.g. `scp -i /path/to/your/private_key ...`
+If you have your private key in the default location of `~/.ssh/id_rsa` then you don't need to specify it to the `scp` command. If you have a custom name or location, then you need to specify it to `scp` using the `-i` argument. In this case the generic form is like this:
+`scp -i /path/to/your/private_key source-file destination-file`
 
 ### To copy from local to remote...
 
@@ -97,6 +98,11 @@ When you open Cycberduck you just click the Open Connection button. In the Open 
 
 We'll let you work out how to *Double click*, or *Drag-and-drop* files, *Create remote directories*, *Upload files*, *Save/Reuse session data* and *Disconnect* for yourself on your particular platform. 
 
+## Next steps
+
+In this tutorial you learnt the very basics of copying data between your (local) machine and your (remote) instance using `scp` from the command line or using a graphical tool like Cyberduck.
+
+There are many tools that do a similar job (e.g.on the command line `rsync`, `rcp`, and graphically FileZilla or WinSCP). There are also many tools that tackle data transfer use cases quite differently (think for instance CloudStor, DropBox or OneDrive). Many applications will allow data transfer via their own application specific user interfaces (RStudio server, Jupyter notebooks, Guacamole remote desktops)
 
 
-## rsync
+
