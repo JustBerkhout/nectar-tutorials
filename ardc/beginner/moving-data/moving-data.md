@@ -1,8 +1,8 @@
 ---
 id: moving-data
-summary: Learn some basic ways of getting data to and from your instance
+summary: Learn some basic ways of copying data to and from your Nectar instance.
 categories: Beginner
-tags: 
+tags: scp, rsync, cyberduck, copy
 difficulty: 1
 status: draft
 feedback_url: https://github.com/JustBerkhout/nectar-tutorials/issues
@@ -99,6 +99,8 @@ When you open Cycberduck you just click the Open Connection button. In the Open 
 We'll let you work out how to *Double click*, or *Drag-and-drop* files, *Create remote directories*, *Upload files*, *Save/Reuse session data* and *Disconnect* for yourself on your particular platform. 
 
 ## Next steps
+
+Duration: 1:00
 
 In this tutorial you learnt the very basics of copying data between your (local) machine and your (remote) instance using `scp` from the command line or using a graphical tool like Cyberduck.
 
