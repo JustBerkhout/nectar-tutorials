@@ -2,7 +2,7 @@
 id: allocation-managment
 summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
 categories: non-technical
-tags:  beginner
+tags:  expiry bot amend extend user management project manager delegation allocation
 difficulty: 2
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
@@ -65,9 +65,7 @@ In other ways your pt-project is different from full-fledged projects. It has li
 
 After you have used all the compute time allocated to you in your pt-project it will expire. If you have built up anything valuable in your pt-project you can request that we *Convert you trial project* when you submit a request for a project allocation. Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to request a project timely. More detail in the section Project Trial in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
 
-
-
-## Allocation process and Projects
+## Allocation Process and Projects
 
 To get a full-fledged project allocated to you you need to apply for an allocation using the`Allocation | New Request` form available from your Nectar dashboard. Once approved informed by email and you will be the *project manager* of your new project. 
 
@@ -89,26 +87,32 @@ The user that requests an allocation/project will automatically become both a Me
 Project managers have access to a few functions that ordinary project members don't have:
 
 - User management
-  The project manager can add additional members to the project. 
 - Project listed in *My Requests*, *Amend/Extend* ability
-  Under `Allocations | My Requests` the request for the project is available to project managers. This gives access to the `Amend/Extend allocation` button
 - Allocation and Expiry process communications
-  Emails regarding expiry and allocation Amend/Extend requests are visible to all project managers. 
 
 positive
-: Occasionally you might come across the term *tenancy* or *tenant-manager*. These art depr'cated, dareth I say archaic, words meaning *project* and *project manager* respectively. 
+: Occasionally you might come across the term *tenancy* or *tenant-manager*. These art depr'cated words meaning *project* and *project manager* respectively. 
 
-### Amending and Extending
+## Amending and Extending
 
-* additional resources
-* additional time
+To change the resources allocated to your project or to extend the duration of your project you or another project manager can submit an Amend/Extend request. 
+
+To submit an Amend/Extend request follow these steps.
+
+1. ​	On your Nectar Dashboard, Navigate to the `Allocations | My Requests` page
+2. 
+
+![](images/amend-extend-allocation.png)
 
 ## Project Expiry
 
-- rules for expiry
-- limited archiving
+Project allocations on the Nectar Research Cloud are created for a fixed term to help ensure fair access to resources for all users of the cloud. When a project allocation nears the end, project managers and members are notified via email. 
 
-More detail in the section Project Allocation in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
+The expiry process is an automated process that follows the rules that are set out in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal). 
+
+negative
+: **Warning** 
+Familiarize yourself with the expiry rules: the *Timeline*, *Action by Nectar* and the *Options for Users*. The last step of expiry -after a generous grace period- is that Nectar deletes the project's resources. Yes. *Deletes.*  [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) article here. 
 
 ## Share or delegate the *project-manager* role
 
@@ -137,3 +141,6 @@ Note the User's usename must be an existing account in Nectar. If you are unsure
 To assign the *project-manager* role to an existing user in your project, you or another project-manager needs to contact Nectar Support. You can use the `Support Ticket` link from your dashboard, send an email to support@ehelp.edu.au or log a ticket on [support.ehelp.edu.au]( https://support.ehelp.edu.au/support/tickets/new), requesting that the project member be assigned the project manager role, and whether you yourself need to retain project-manager status.
 
 Note that Nectar will only accept requests for assigning the project-manager *from existing project-managers* or from the Chief Investigator as listed in the project allocation request. 
+
+## Next Steps
+
