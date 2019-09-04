@@ -116,7 +116,7 @@ Familiarize yourself with the expiry rules: the *Timeline*, *Action by Nectar* a
 
 If you need to ensure that your project doesn't expire, you can also share the *project-manager* role with other users in your project. All users in the project that have the *project-manager* role will be notified of the stages of expiry by the Expiry Bot, and they have access to the `Amend/Extend allocation` button for the project via the My Requests page. 
 
-To share/delegate you need to take two steps:
+To sha./re	re/delegate you need to take two steps:
 
 1. If the user you would like to share the *project-manager* role with isn't in your project, then you need to add them as a Member to your project using the User Management feature. 
 2. To assign the *project-manager* role to a Member of your project you need to contact Nectar support
@@ -142,3 +142,6 @@ Note that Nectar will only accept requests for assigning the project-manager *fr
 
 ## Next Steps
 
+In this tutorial you've learnt about Allocation Management. You've learnt what sets *pt-projects* apart from *projects*. You've learnt how to avoid *data-loss-by-expiry* by Amending/Extending your project and you've learnt how to share/delegate your project-manager role with other members of your project. 
+
+All we hope for in return is that you remember us fondly, when you're in [Sweden](https://www.nobelprize.org/ceremonies/the-nobel-prize-award-ceremonies-and-banquets/) next.
