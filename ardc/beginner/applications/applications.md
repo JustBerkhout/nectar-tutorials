@@ -1,9 +1,9 @@
 ---
 
 id: applications
-summary: Learn to quickly build and deploy application environments by assembling your favourite apps from our catalog.
+summary: Learn to quick deploy an application environment from our catalog with this R-Studio example.
 categories: Beginner
-tags: Cloud Starter, application, dashboard
+tags: application, dashboard, R-studio, shiny, x2go, guacamole, remote desktop
 difficulty: 1
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
@@ -17,17 +17,17 @@ author: Mark Endrei <mark.endrei@uq.edu.au>
 
 ## Overview
 
-Duration: 10:00
+Duration: 1:00
 
 ### What are Applications
 
 Nectar have packaged some cloud-ready applications into the *Application Catalog* available from your [Nectar dashboard](https://dashboard.rc.nectar.org.au). You can browse the catalog and compose your own application environments running on the Nectar Research Cloud.
 
-In this tutorial you'll step through the *Quick Deploy* process for configuring and deploying and application from the catalog.
+In this tutorial you'll step through the *Quick Deploy* process for configuring and deploying an application from the catalog. Our example will be an *R-Studio* application. It gives secure access to a community edition R-Studio server, Shiny server as well as remote-desktop-based access via either your browser or X2Go.
 
 positive
 : **Cloud Starter**
-This tutorial is part of the Nectar Cloud Starter curriculum. You should have a Keypair and you should have terminal software installed on your machine. If you think you need help with any of that, you should complete Cloud Starter tutorials before you start here. 
+You should have a Keypair registered in your Nectar account. If you think you need help with that, you should complete Cloud Starter tutorials before you start here. 
 
 ### What you'll learn
 
@@ -35,9 +35,9 @@ This tutorial is part of the Nectar Cloud Starter curriculum. You should have a 
 
 ### What you'll need
 
-- Keypair
-- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software)
-- Access to a Nectar Project
+- Keypair registered in your Nectar account
+- X2Go software (optional)
+- Access to a volume storage allocation (optional)
 
 ## Browsing the Application Catalog
 
@@ -62,20 +62,27 @@ Duration: 2:00
 
 Choose your desired **Instance Flavor**, **Key pair** and the **Availability Zone**. Click `Next` to continue.
 
-positive
-: With R-Studio you can select an existing volume for application data storage. If you plan to use an existing volume, make sure your volume and application environment are in the same Availability Zone.
-
 ![Launch details](images/rstudio-flavor.png)
 
-### Hone name and DNS Zone
+### Host name and DNS Zone
 
 You can choose an optional **Host name** and **DNS zone** name for your instance. If you choose a DNS zone at this stage, we will automatically create a DNS entry for you and provision a HTTPS security certificate for your instance.
+
+positive
+: **Highly recommended**
+Choosing an easy Host name and associating your project's DNS zone is highly recommended. Not only will you be able to access your R-Studio on the slick URL of `https://[hostname].[project].cloud.edu.au`, your R-Studio instance will be set up with encrypted communications (i.e. `https`), significantly improving the security of your instance.
+
+
 
 ![Launch Source](images/rstudio-dns.png)
 
 ### Existing Volume
 
-Select your volume, if required. Click `Next` to continue.
+Optionally, select your existing volume. Click `Next` to continue. You can complete this tutorial without using an *existing volume*. 
+
+positive
+: **A word on Volumes**
+With R-Studio you can select an existing volume for application data storage. Using a Volume makes any data you generate on your instance persistent, i.e. you can terminate the instance, but your data will remain intact on the volume until you launch a new instance with that volume attached. If you plan to use a volume, you have to have a Volume storage allocation and you have to make sure your volume and application environment are in the same Availability Zone. Learn more about volumes in our Volume Storage tutorial.
 
 ![dashboard-filters](images/rstudio-volume.png)
 
@@ -109,7 +116,7 @@ Your application is now deployed and ready. You should see the **Last Operation*
 
 ## Try Out Your Application
 
-Duration: 5:00
+Duration: 7:00
 
 Once you log in with the **Username** and **Password** you provided earlier, you will reach the R-Studio landing page in this example.
 
@@ -127,28 +134,39 @@ R-Studio is now available!
 
 This application also offers access to R-Studio through *Remote Desktop* via *X2Go*. This might be especially useful for workloads that require visualisations that can't be handled from within the browser environment.
 
-If you would like to use the Remote Desktop interface, you should install the *X2Go client*. It is available for Windows, Mac and Linux.
+If you would like to use the Remote Desktop interface, you should install the *X2Go client*. It is available for Windows, Mac and Linux from [x2go.org](https://x2go.org).
 
-Once installed and running, you should click the `Create Session` button and provide the Host, Login and SSH keypair details. Session type should be XFCE.
+Once installed and running, you should click the `Create Session` button and provide the **Host**, **Login** and **SSH keypair** details. Your **Session type** should be XFCE.
 
-![Launch Building](images/rstudio-x2go.png)
+![x2go-session-settings](images/rstudio-x2go.png)
 
-Once you have created the session, once you connect, the XFCE graphical environment will appear, and you can launch R-Studio from the menu.
+
+
+| Setting      | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| Host         | use the instance IP address, or the hostname `[hostname].[project].cloud.edu.au` |
+| Login        | use the username you created in the *Configure Application* dialog |
+| RSA/DSA key  | use the private key that corresponds to the key you chose in the *Configure Application* dialog |
+| Session type | use *XFCE*. The application is preconfigured with the XFCE desktop environment |
+
+Once you have created the session and connected, the XFCE desktop environment will appear and you can launch R-Studio from the Applications menu.
 
 ![Launch Building](images/rstudio-desktop.png)
 
-You can also access your R-Studio instance using SSH, with the username and key pair you provided earlier (please see above).
+
 
 ## Next Steps
 
 Duration: 1:00
 
-You have launched an application environment in the Nectar Research cloud. You have used the Quick Deploy process from the Nectar dashboard. You configured and deployed the application then confirmed that it is up and running on the Nectar cloud.
-
-Upon successful deployment your Nectar dashboard shows an active application environment on the `Environments` page.
+You have launched an application environment in the Nectar Research cloud. You have used the Quick Deploy process from the Nectar dashboard. You configured and deployed the application then confirmed that it is up and running on the Nectar cloud. Upon successful deployment your Nectar dashboard shows an active application environment on the `Environments` page. You can access your environment using preconfigured access methods. In our R-Studio example a web-based R-Studio server, Shiny-server and Remote Desktop, and additionally a X2Go-based remote desktop. 
 
 positive
-: **Cloud Starter**
-Congratulations. You've deployed an application from the Application Catalog. Now what?
+: **You can still use `ssh`/Terminal/command line too**
+The instance that  is accessible using Terminal software and `ssh` too. 
 
-Our next tutorial will show you how to use the Nectar Database feature to deploy relational databases.
+
+
+positive
+: **Application catalog**
+In this tutorial you've learnt to launch an application from our Nectar Application catalog. You've used an R-Studio example. Browse through the [Applications catalog](https://dashboard.rc.nectar.org.au/app-catalog/catalog/) to see our other preconfigured applications.
