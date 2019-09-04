@@ -57,21 +57,19 @@ positive
 
 ### Your pt-project
 
-Upon your first logon Nectar creates a trial project for you,m know as your *pt*-project (or *personal trial*). In this project you are allocated a very limited 2vCPU of resources for a maximum of 6 vCPU-month of running time. 
+Upon your first logon Nectar creates a trial project for you, known as your *pt*-project (or *personal trial*). In this project you are allocated a very limited quota of 2vCPU of resources for a maximum of 6 vCPU-month of running time. 
 
-Your pt-project is like a full-fledged project in many ways. It is the home of instances, it has an allocation, it houses your project-related things, such as Security Groups
+Your pt-project is like a full-fledged project in many ways. It is the home of instances, it has quota of some resources allocated (e.g. vCPU, RAM), it houses your project-related things, such as Security Groups
 
-In other ways your pt-project is different from full-fledged projects. It has limited *limited resources* (2 vCPU for up to 6 vCPU-months). You can't share you pt-project with others; the is no user management to grant access to other Nectar users. You git your pt *no questions asked*; there is no application or allocation process. Your *pt-project* is useful for trialing or indeed completing Nectar tutorials.
+In other ways your pt-project is different from full-fledged projects. It has *limited resources* (2 vCPU for up to 6 vCPU-months). You can't share you pt-project with others; the is no user management to grant access to other Nectar users. You get your pt *no questions asked*; there is no application or allocation process. Your *pt-project* is useful for trialing or indeed completing Nectar tutorials.
 
-After you have used all the compute time allocated to you in your pt-project it will expire. If you have built up anything valuable in your pt-project you can request that we *Convert you trial project* when you submit a request for a project allocation. Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to request a project timely. More detail in the section Project Trial in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
+After you have used all the compute time allocated to you in your pt-project it will expire. If you have built up anything valuable in your *pt-project* you can request that we *Convert you trial project* when you submit a request for a project allocation. Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to request a project timely. More detail in the section Project Trial in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
 
 ## Allocation Process and Projects
 
-To get a full-fledged project allocated to you you need to apply for an allocation using the`Allocation | New Request` form available from your Nectar dashboard. Once approved informed by email and you will be the *project manager* of your new project. 
+To get a full-fledged project allocated to you you need to apply for an allocation using the`Allocation | New Request` form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project. 
 
 ![Allocation request](images/allocation-request.png)
-
-
 
 To be eligible for a Nectar national allocation you have to submit details of your nationally relevant grant or funding program. If you don't have such a grant, then you can still be allocated cloud resources by the participating nodes under node discretion, by specifying a *Allocation home location* in your request. 
 
