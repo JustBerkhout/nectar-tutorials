@@ -27,10 +27,6 @@ negative
 : **Antarctica and Amazon (the rainforest)**
 The Expiry Bot diligently executes the expiry process. It does not know of your field trips to Antarctica or the Amazon rainforest, or any other places where wifi-access or your attention to emails may be limited. Make sure you have arranged extensions for your projects if you happen to be away for extended periods or delegate your project manager role to another user. 
 
-### A diagram
-
-![Overview diagram](images/requests-projects.svg)
-
 ### What you'll learn
 
 - Understanding *accounts*, *allocations*, *projects*, *resources* and *quota*
@@ -42,7 +38,19 @@ The Expiry Bot diligently executes the expiry process. It does not know of your 
 
 - A Nectar Research Cloud account, or access to the AAF to get one. 
 
+
+
+## A diagram
+
+Duration: 2:00
+
+![Overview diagram](images/requests-projects.svg)
+
+### 
+
 ## Accounts and Personal Trial (pt) projects
+
+Duration: 5:00
 
 The first time you log on to the dashboard, Nectar creates two things your *Account* and a *Personal Trial (pt)* project. Your account is tied to your email address, while your personal trial is a project named pt-*xyz* (where *xyz* is a number). The two are closely related, but they are not the same thing.
 
@@ -66,6 +74,8 @@ In other ways your pt-project is different from full-fledged projects. It has *l
 After you have used all the compute time allocated to you in your pt-project it will expire. If you have built up anything valuable in your *pt-project* you can request that we *Convert you trial project* when you submit a request for a project allocation. Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to request a project timely. More detail in the section Project Trial in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
 
 ## Allocation Process and Projects
+
+Duration: 5:00
 
 To get a full-fledged project allocated to you you need to apply for an allocation using the`Allocation | New Request` form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project. 
 
@@ -93,16 +103,22 @@ positive
 
 ## Amending and Extending
 
+Duration: 2:00
+
 To change the resources allocated to your project or to extend the duration of your project you or another project manager can submit an Amend/Extend request. 
 
 To submit an Amend/Extend request follow these steps.
 
-1. ​	On your Nectar Dashboard, Navigate to the `Allocations | My Requests` page
-2. 
+1. On your Nectar Dashboard, Navigate to the `Allocations | My Requests` page
+2. Click the `Amend/Extend allocation` button.
+
+You will go to the Allocation Request form, with some of your project's details already filled in. From time to time the Allocation Request form changes, so please read or reread the form when filling in the requested details. 
 
 ![](images/amend-extend-allocation.png)
 
 ## Project Expiry
+
+Duration: 2:00
 
 Project allocations on the Nectar Research Cloud are created for a fixed term to help ensure fair access to resources for all users of the cloud. When a project allocation nears the end, project managers and members are notified via email. 
 
@@ -113,6 +129,8 @@ negative
 Familiarize yourself with the expiry rules: the *Timeline*, *Action by Nectar* and the *Options for Users*. The last step of expiry -after a generous grace period- is that Nectar deletes the project's resources. Yes. *Deletes.*  [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) article here. 
 
 ## Share or delegate the *project-manager* role
+
+Duration: 4:00
 
 If you need to ensure that your project doesn't expire, you can also share the *project-manager* role with other users in your project. All users in the project that have the *project-manager* role will be notified of the stages of expiry by the Expiry Bot, and they have access to the `Amend/Extend allocation` button for the project via the My Requests page. 
 
@@ -141,6 +159,8 @@ To assign the *project-manager* role to an existing user in your project, you or
 Note that Nectar will only accept requests for assigning the project-manager *from existing project-managers* or from the Chief Investigator as listed in the project allocation request. 
 
 ## Next Steps
+
+Duration: 1:00
 
 In this tutorial you've learnt about Allocation Management. You've learnt what sets *pt-projects* apart from *projects*. You've learnt how to avoid *data-loss-by-expiry* by Amending/Extending your project and you've learnt how to share/delegate your project-manager role with other members of your project. 
 
