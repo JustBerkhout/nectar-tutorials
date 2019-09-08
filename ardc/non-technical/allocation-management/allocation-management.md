@@ -44,6 +44,8 @@ The Expiry Bot diligently executes the expiry process. It does not know of your 
 
 Duration: 2:00
 
+Below is a dagram that represents 3 key processes relating to the nectar project lifecycle: *Account and pt-project*, the *Allocation process* and the *Expiry process*. These processes are explained in more detail in the remainder of this tutorial, along with related information. 
+
 ![Overview diagram](images/requests-projects.svg)
 
 ### 
@@ -52,16 +54,16 @@ Duration: 2:00
 
 Duration: 5:00
 
-The first time you log on to the dashboard, Nectar creates two things your *Account* and a *Personal Trial (pt)* project. Your account is tied to your email address, while your personal trial is a project named pt-*xyz* (where *xyz* is a number). The two are closely related, but they are not the same thing.
+The first time you log on to the dashboard, Nectar creates two things: your *Account* and a *Personal Trial (pt)* project. Your account represeents you and is tied to your email address. Your personal trial is a *project* named pt-*xyz* (where *xyz* is a number); it is tied to your account. The two are closely related, but they are not the same thing.
 
 ### Your Nectar Account
 
 You log on to [Nectar dashboard](https://dashboard.rc.nectar.org.au/) using [AAF](https://aaf.edu.au/) (in Australia) or [Tuakiri](https://www.reannz.co.nz/products-and-services/tuakiri/) (in New Zealand). AAF and Tuakiri provide both authorisation and authentication, using your identity (i.e. username) at your home institution.
 
-You account is created upon your first logon. You account is associated with your email address and will contain some account-related information, such as your public-private key pairs (when you register them), your Nectar OpenStack password or any Application Credentials you might create. 
+Your account is created upon your first logon. Your account is associated with your email address and will contain some account-related information, such as your public-private key pairs (when you register them), your Nectar OpenStack password or any Application Credentials you might create. 
 
 positive
-: Your Nectar OpenStack password is not the same thing as your AAF/Tuakiri password. Read more about the Nectar OpenStack password in our [knowledge base article](https://support.ehelp.edu.au/support/solutions/articles/6000145832-the-nectar-openstack-password). Note also that [Nectar OpenStack Application Credentials](https://support.ehelp.edu.au/support/solutions/articles/6000212274-application-credentials) are a more sophisticated solution than the Nectar OpenStack password.
+: Your Nectar OpenStack password is not the same thing as your AAF/Tuakiri password. Read more about the Nectar OpenStack password in our [knowledge base article](https://support.ehelp.edu.au/support/solutions/articles/6000145832-the-nectar-openstack-password). Note also that [Nectar OpenStack Application Credentials](https://support.ehelp.edu.au/support/solutions/articles/6000212274-application-credentials) are a more sophisticated solution than the Nectar OpenStack password for similar use.
 
 ### Your pt-project
 
@@ -69,19 +71,19 @@ Upon your first logon Nectar creates a trial project for you, known as your *pt*
 
 Your pt-project is like a full-fledged project in many ways. It is the home of instances, it has quota of some resources allocated (e.g. vCPU, RAM), it houses your project-related things, such as Security Groups
 
-In other ways your pt-project is different from full-fledged projects. It has *limited resources* (2 vCPU for up to 6 vCPU-months). You can't share you pt-project with others; the is no user management to grant access to other Nectar users. You get your pt *no questions asked*; there is no application or allocation process. Your *pt-project* is useful for trialing or indeed completing Nectar tutorials.
+In other ways your pt-project is different from full-fledged projects. It has *limited resources* (2 vCPU for up to 6 vCPU-months). You can't share your pt-project with others; there is no user management to grant access to other Nectar users. You get your pt *no questions asked*; there is no application or allocation process. Your *pt-project* is useful for trialing Nectar or indeed completing our Nectar tutorials.
 
-After you have used all the compute time allocated to you in your pt-project it will expire. If you have built up anything valuable in your *pt-project* you can request that we *Convert you trial project* when you submit a request for a project allocation. Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to request a project timely. More detail in the section Project Trial in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
+After you have used all of the compute time allocated to you in your pt-project it will expire. If you have built up anything valuable in your *pt-project* you can request that we *Convert you trial project* when you submit a request for a project allocation. Note that the Expiry Bot will start removing instances from your pt-project shortly after pt-project expiration. To retain them by using a trial project conversion, you need to request a project timely. More detail in the section Project Trial in our article on [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) 
 
 ## Allocation Process and Projects
 
 Duration: 5:00
 
-To get a full-fledged project allocated to you you need to apply for an allocation using the`Allocation | New Request` form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project. 
+To get a full-fledged project allocated to you, you need to apply for an allocation using the `Allocation | New Request`-form available from your Nectar dashboard. Once approved you will be informed by email and you will be the *project manager* of your new project. 
 
 ![Allocation request](images/allocation-request.png)
 
-To be eligible for a Nectar national allocation you have to submit details of your nationally relevant grant or funding program. If you don't have such a grant, then you can still be allocated cloud resources by the participating nodes under node discretion, by specifying a *Allocation home location* in your request. 
+To be eligible for a Nectar national allocation you have to submit details of your nationally relevant grant or funding program; this is part of our *Research Cloud National Allocation Scheme* . If you don't have such a grant, then you can still be allocated cloud resources by the participating nodes under node discretion, by specifying a *Allocation home location* in your request. 
 
 In your request you need to specify the cloud resources that you intend to use. If you're not perfectly sure just yet, then that's all right. You will be able to request amendments to your project. We'll describe that below. 
 
@@ -126,15 +128,15 @@ The expiry process is an automated process that follows the rules that are set o
 
 negative
 : **Warning** 
-Familiarize yourself with the expiry rules: the *Timeline*, *Action by Nectar* and the *Options for Users*. The last step of expiry -after a generous grace period- is that Nectar deletes the project's resources. Yes. *Deletes.*  [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) article here. 
+Familiarize yourself with the expiry rules: the *Timeline*, *Action by Nectar* and the *Options for Users*. The last step of expiry -after a generous grace period- is that Nectar deletes the project's resources. Yes. *Deletes.* You can find our [Expiry and Renewal](https://support.ehelp.edu.au/support/solutions/articles/6000171494-project-allocation-expiry-and-renewal) article here. 
 
 ## Share or delegate the *project-manager* role
 
 Duration: 4:00
 
-If you need to ensure that your project doesn't expire, you can also share the *project-manager* role with other users in your project. All users in the project that have the *project-manager* role will be notified of the stages of expiry by the Expiry Bot, and they have access to the `Amend/Extend allocation` button for the project via the My Requests page. 
+To help ensure that your project doesn't expire, you can also share the *project-manager* role with other users in your project. All users in the project that have the *project-manager* role will be notified of the stages of expiry by the Expiry Bot, and they have access to the `Amend/Extend allocation` button for the project via the My Requests page. 
 
-To sha./re	re/delegate you need to take two steps:
+To share/delegate the *project-manager*-role you need to take two steps:
 
 1. If the user you would like to share the *project-manager* role with isn't in your project, then you need to add them as a Member to your project using the User Management feature. 
 2. To assign the *project-manager* role to a Member of your project you need to contact Nectar support
@@ -154,7 +156,7 @@ Note the User's usename must be an existing account in Nectar. If you are unsure
 
 ### Contact Nectar support
 
-To assign the *project-manager* role to an existing user in your project, you or another project-manager needs to contact Nectar Support. You can use the `Support Ticket` link from your dashboard, send an email to support@ehelp.edu.au or log a ticket on [support.ehelp.edu.au]( https://support.ehelp.edu.au/support/tickets/new), requesting that the project member be assigned the project manager role, and whether you yourself need to retain project-manager status.
+To assign the *project-manager* role to an existing user in your project, you or another project-manager needs to contact Nectar Support. You can use the `Support Ticket` link from your dashboard, send an email to support@ehelp.edu.au or log a ticket on [support.ehelp.edu.au]( https://support.ehelp.edu.au/support/tickets/new), requesting that the specified project member (*be sure to include their details*) be assigned the project manager role, and whether you yourself need to retain project-manager status.
 
 Note that Nectar will only accept requests for assigning the project-manager *from existing project-managers* or from the Chief Investigator as listed in the project allocation request. 
 
@@ -164,4 +166,4 @@ Duration: 1:00
 
 In this tutorial you've learnt about Allocation Management. You've learnt what sets *pt-projects* apart from *projects*. You've learnt how to avoid *data-loss-by-expiry* by Amending/Extending your project and you've learnt how to share/delegate your project-manager role with other members of your project. 
 
-All we hope for in return is that you remember us fondly, when you're in [Sweden](https://www.nobelprize.org/ceremonies/the-nobel-prize-award-ceremonies-and-banquets/) next.
+All we hope for in return is that you remember us fondly, when you're attending any [banquets in Sweden](https://www.nobelprize.org/ceremonies/the-nobel-prize-award-ceremonies-and-banquets/).
