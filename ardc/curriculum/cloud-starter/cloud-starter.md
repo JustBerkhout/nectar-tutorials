@@ -35,13 +35,13 @@ This series is technical in nature. You will learn *how* to use the cloud, not *
 - **Changing instances**
   Rebooting, Resizing, Rebuilding and Deleting
 - **Working with allocations**
-  Allocation Management: requests and expiry.
+  Allocation Management: requests and expiry
 
 ### What you'll need
 
-- An account on the Nectar Research Cloud, or the AAF Access to get one. 
+- An account on the Nectar Research Cloud, or the AAF Access to get one 
 - Basic computer skills
-- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software). 
+- [Terminal software](https://support.ehelp.edu.au/support/solutions/articles/6000223964-terminal-software)
 
 
 
@@ -53,7 +53,7 @@ This series is technical in nature. You will learn *how* to use the cloud, not *
 
 [Security Groups, the absolute basics](/tutorial/sec-groups-101)
 
-### Launching and Connecting 
+### Launching and connecting 
 
 [Launching Virtual Machines](/tutorial/launching-virtual-machines)
 
