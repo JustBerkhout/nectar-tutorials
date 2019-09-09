@@ -44,7 +44,7 @@ This tutorial is part of the Nectar Cloud Starter curriculum. You should be fami
 
 ## Starting the Launch Dialog
 
-Duration: 3:00
+Duration: 5:00
 
 In this tutorial we will use the *Launch Dialog* and configure the most basic Virtual Machine we could think of. 
 
@@ -102,7 +102,7 @@ Use the up-arrow button beside the flavor you need to select it for launch
 
 ## Networks, Security Groups and Key Pair
 
-Duration: 4:00
+Duration: 5:00
 
 ### Networks
 
@@ -167,7 +167,7 @@ High five!
 
 ## Next Steps
 
-Duration: 1:00
+Duration: 2:00
 
 You have launched a virtual machine in the Nectar Research cloud. You have used the Launch Dialog from the Nectar dashboard. You selected a virtual machine Image and applied your Security Group/s and your public key and you applied basic networking using the classic network provider.
 

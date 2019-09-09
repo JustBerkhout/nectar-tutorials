@@ -2,7 +2,7 @@
 id: changing-instances
 summary: Making changes to existing instances. Learn to reboot, resize, rebuild and delete instances.
 categories: Beginner
-tags: 
+tags: Cloud Starter
 difficulty: 1
 status: published
 feedback_url: https://github.com/JustBerkhout/nectar-tutorials/issues

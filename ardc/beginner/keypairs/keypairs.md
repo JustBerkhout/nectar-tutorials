@@ -2,7 +2,7 @@
 id: nectar-keypairs
 summary: Understanding Public-Private Keypairs in the Nectar Research Cloud.
 categories: Beginner
-tags: security authentication
+tags: Cloud Starter, security authentication
 difficulty: 1
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues

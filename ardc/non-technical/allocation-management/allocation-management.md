@@ -2,7 +2,7 @@
 id: allocation-managment
 summary: Understand, manage and maintain an allocation in the Nectar Research Cloud
 categories: non-technical
-tags:  expiry bot amend extend user management project manager delegation allocation
+tags:  Cloud Starter, expiry bot amend extend user management project manager delegation allocation
 difficulty: 2
 status: draft
 feedback_url: https://github.com/JustBerkhout/tutorials.ubuntu.com/issues
