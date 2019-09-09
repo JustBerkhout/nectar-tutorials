@@ -22,11 +22,12 @@ positive
 In this tutorial series we will point you to a number of our tutorials, and occasionally we'll add some addtional information. We recommend you follow all these tutorials in order. 
 
 positive
-: This curriculum is technical in nature. You will learn *how* to use the cloud, not *why*. It is also entry-level: you'll learn *one* (easy) way of doing some things, not *all*. 
+: **Technical curriculum**
+This series is technical in nature. You will learn *how* to use the cloud, not *why*. It is also entry-level: you'll learn *one* (easy) way of doing some things, not *all*. 
 
 ### What you'll learn
 
-- **Prerequisites**
+- **Setting up prerequisites**
   Public-Private keypair and Security Groups
 - **Launching and connecting**
   Launching and connecting to your Virtual Machine (VM)
@@ -44,9 +45,9 @@ positive
 
 
 
-## Contents
+## Tutorials
 
-### Prerequisites
+### Setting up prerequisites
 
 [Creating a Keypair for use in Nectar](tutorial/nectar-keypairs)
 
